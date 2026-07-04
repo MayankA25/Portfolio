@@ -1,7 +1,4 @@
-import { CgCPlusPlus } from "react-icons/cg";
-import { DiMysql } from "react-icons/di";
 import {
-  FaAws,
   FaCss3Alt,
   FaGitAlt,
   FaGithub,
@@ -12,16 +9,10 @@ import {
 import { GrMysql } from "react-icons/gr";
 import { RiNextjsFill } from "react-icons/ri";
 import {
-  SiCloudinary,
   SiCplusplus,
   SiExpress,
-  SiGoogle,
   SiJavascript,
-  SiLeaflet,
   SiMongodb,
-  SiMysql,
-  SiOpenstreetmap,
-  SiPassport,
   SiPostman,
   SiRedis,
   SiRender,
@@ -35,93 +26,93 @@ import {
 export const techStackIcons = [
   {
     icon: (
-      <SiTypescript className="size-9 text-blue-500 hover:scale-110 transition-all duration-200" />
+      <SiTypescript className="size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
     ),
     name: "TypeScript",
   },
   {
     icon: (
-      <SiJavascript className="size-9 text-yellow-400 hover:scale-110 transition-all duration-200" />
+      <SiJavascript className="size-9 text-yellow-400 transition-all duration-200 hover:scale-110" />
     ),
     name: "JavaScript",
   },
 
   {
     icon: (
-      <FaReact className="size-9 text-cyan-400 hover:scale-110 transition-all duration-200" />
+      <FaReact className="size-9 text-cyan-400 transition-all duration-200 hover:scale-110" />
     ),
     name: "React",
   },
   {
     icon: (
-      <RiNextjsFill className="size-9 text-white hover:scale-110 transition-all duration-200" />
+      <RiNextjsFill className="size-9 text-white transition-all duration-200 hover:scale-110" />
     ),
     name: "Next.js",
   },
   {
     icon: (
-      <FaNodeJs className="size-9 text-green-500 hover:scale-110 transition-all duration-200" />
+      <FaNodeJs className="size-9 text-green-500 transition-all duration-200 hover:scale-110" />
     ),
     name: "Node.js",
   },
   {
     icon: (
-      <SiExpress className="size-9 text-gray-300 hover:scale-110 transition-all duration-200" />
+      <SiExpress className="size-9 text-gray-300 transition-all duration-200 hover:scale-110" />
     ),
     name: "Express.js",
   },
   {
     icon: (
-      <SiTanstack className="size-9 text-yellow-400 hover:scale-110 transition-all duration-200" />
+      <SiTanstack className="size-9 text-yellow-400 transition-all duration-200 hover:scale-110" />
     ),
     name: "TanStack",
   },
   {
     icon: (
-      <SiMongodb className="size-9 text-green-600 hover:scale-110 transition-all duration-200" />
+      <SiMongodb className="size-9 text-green-600 transition-all duration-200 hover:scale-110" />
     ),
     name: "MongoDB",
   },
   {
     icon: (
-      <GrMysql className="size-9 text-blue-300 hover:scale-110 transition-all duration-200" />
+      <GrMysql className="size-9 text-blue-300 transition-all duration-200 hover:scale-110" />
     ),
     name: "MySQL",
   },
 
   {
     icon: (
-      <SiTailwindcss className="size-9 text-sky-400 hover:scale-110 transition-all duration-200" />
+      <SiTailwindcss className="size-9 text-sky-400 transition-all duration-200 hover:scale-110" />
     ),
     name: "Tailwind CSS",
   },
   {
     icon: (
-      <FaHtml5 className="size-9 text-orange-500 hover:scale-110 transition-all duration-200" />
+      <FaHtml5 className="size-9 text-orange-500 transition-all duration-200 hover:scale-110" />
     ),
     name: "HTML5",
   },
   {
     icon: (
-      <FaCss3Alt className="size-9 text-blue-500 hover:scale-110 transition-all duration-200" />
+      <FaCss3Alt className="size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
     ),
     name: "CSS3",
   },
   {
     icon: (
-      <FaGitAlt className="size-9 text-orange-600 hover:scale-110 transition-all duration-200" />
+      <FaGitAlt className="size-9 text-orange-600 transition-all duration-200 hover:scale-110" />
     ),
     name: "Git",
   },
   {
     icon: (
-      <FaGithub className="size-9 text-white hover:scale-110 transition-all duration-200" />
+      <FaGithub className="size-9 text-white transition-all duration-200 hover:scale-110" />
     ),
     name: "GitHub",
   },
   {
     icon: (
-      <SiRedis className="size-9 text-red-500 hover:scale-110 transition-all duration-200" />
+      <SiRedis className="size-9 text-red-500 transition-all duration-200 hover:scale-110" />
     ),
     name: "Redis",
   },
@@ -147,7 +138,7 @@ export const techStackIcons = [
   // },
   {
     icon: (
-      <SiSocketdotio className="size-9 text-white hover:scale-110 transition-all duration-200" />
+      <SiSocketdotio className="size-9 text-white transition-all duration-200 hover:scale-110" />
     ),
     name: "Socket.IO",
   },
@@ -165,25 +156,25 @@ export const techStackIcons = [
   // },
   {
     icon: (
-      <SiPostman className="size-9 text-orange-500 hover:scale-110 transition-all duration-200" />
+      <SiPostman className="size-9 text-orange-500 transition-all duration-200 hover:scale-110" />
     ),
     name: "Postman",
   },
   {
     icon: (
-      <SiVercel className="size-9 text-white hover:scale-110 transition-all duration-200" />
+      <SiVercel className="size-9 text-white transition-all duration-200 hover:scale-110" />
     ),
     name: "Vercel",
   },
   {
     icon: (
-      <SiRender className="size-9 text-purple-400 hover:scale-110 transition-all duration-200" />
+      <SiRender className="size-9 text-purple-400 transition-all duration-200 hover:scale-110" />
     ),
     name: "Render",
   },
   {
     icon: (
-      <SiCplusplus className="size-9 text-blue-300 hover:scale-110 transition-all duration-200" />
+      <SiCplusplus className="size-9 text-blue-300 transition-all duration-200 hover:scale-110" />
     ),
     name: "C++",
   },

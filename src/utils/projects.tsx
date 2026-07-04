@@ -23,7 +23,7 @@ export const projects = [
       "Multer",
       "Zod",
       "TanStack Query",
-      "Axios"
+      "Axios",
     ],
     coverImg: "/hero-image.jpg",
   },
@@ -81,7 +81,7 @@ export const projects = [
       "FullCalendar",
       "Monaco Editor",
       "Axios",
-      "JWT"
+      "JWT",
     ],
     coverImg: "/hero-image.jpg",
   },

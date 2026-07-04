@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export default function Badge({ text }: { text: string }) {
   return (
-    <div className='flex items-center justify-center border-2 border-neutral-700 px-4 py-1 rounded-lg gap-2 bg-neutral-900 hover:bg-neutral-800 cursor-default hover:scale-104 transition-all duration-200'>
-      <span className='p-0.75 rounded-full bg-neutral-500'></span>
-      <span className='text-xs font-bold'>{text}</span>
+    <div className="flex cursor-default items-center justify-center gap-2 rounded-lg border-2 border-neutral-700 bg-neutral-900 px-4 py-1 transition-all duration-200 hover:scale-104 hover:bg-neutral-800">
+      <span className="rounded-full bg-neutral-500 p-0.75"></span>
+      <span className="text-xs font-bold">{text}</span>
     </div>
-  )
+  );
 }

@@ -13,7 +13,7 @@ export default function GithubHeatMap() {
   if (!mounted) return null;
   return (
     <div className="flex flex-col justify-center gap-5">
-        <h1 className="text-3xl font-bold text-neutral-300">Contributions</h1>
+      <h1 className="text-3xl font-bold text-neutral-300">Contributions</h1>
       <GitHubCalendar
         username="MayankA25"
         blockSize={14}
