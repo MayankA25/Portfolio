@@ -11,6 +11,7 @@ import {
 import Image from "next/image";
 import React, { useState } from "react";
 import { SiGithub } from "react-icons/si";
+import Badge from "../ui/Badge";
 
 export default function Projects() {
   const [coverImageHover, setCoverImageHover] = useState(-1);
@@ -30,6 +31,7 @@ export default function Projects() {
                     src={project.coverImg}
                     alt=""
                     fill
+                    sizes="100vw"
                     className={`object-cover transition-all duration-200 ${coverImageHover != -1 && coverImageHover == index && "scale-103 "}`}
                   ></Image>
                   <div
@@ -64,17 +66,41 @@ export default function Projects() {
                   <div className="flex items-center gap-7">
                     <h1 className="text-3xl font-bold">{project.title}</h1>
                     <div className="flex items-center gap-3">
-                        <div className={`flex items-center justify-center border ${project.completed ? "border-green-400" : "border-yellow-400"} px-4 py-1 rounded-xl gap-2 bg-green-400/5`}>
-                            <span className={`p-1 rounded-full ${project.completed ? "bg-green-400" : "bg-yellow-400"}`}></span>
-                            <span className="text-sm text-white font-bold">{project.completed ? "Completed" : "Work In Progress"}</span>
+                      <div
+                        className={`flex items-center justify-center border ${project.completed ? "border-green-400" : "border-yellow-400"} px-4 py-1 rounded-xl gap-2 bg-green-400/5`}
+                      >
+                        <span
+                          className={`p-1 rounded-full ${project.completed ? "bg-green-400" : "bg-yellow-400"}`}
+                        ></span>
+                        <span className="text-sm text-white font-bold">
+                          {project.completed ? "Completed" : "Work In Progress"}
+                        </span>
+                      </div>
+                      {project.deployed && (
+                        <div className="flex items-center justify-center border border-green-400 px-4 py-1 rounded-xl gap-2 bg-green-400/5">
+                          <span className="p-1 rounded-full bg-green-400"></span>
+                          <span className="text-sm text-white font-bold">
+                            Deployed
+                          </span>
                         </div>
-                        {project.deployed && <div className="flex items-center justify-center border border-green-400 px-4 py-1 rounded-xl gap-2 bg-green-400/5">
-                            <span className="p-1 rounded-full bg-green-400"></span>
-                            <span className="text-sm text-white font-bold">Deployed</span>
-                        </div>}
+                      )}
                     </div>
                   </div>
                   <p>{project.description}</p>
+                  <div className="flex items-center">
+                    <div className="grid grid-cols-4 gap-3">
+                      {project.techStack.slice(0, 7).map((tech, index) => {
+                        return (
+                          <div key={index} className="relative">
+                            <Badge text={tech} />
+                            {index == project.techStack.slice(0, 7).length-1 && <div className="absolute top-0 -right-12 flex items-center bg-neutral-900 p-1.5 px-2 rounded-full text-sm font-bold cursor-default">
+                              +{project.techStack.length - 7}
+                            </div>}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
                   <button className="bg-neutral-300 w-full p-2 rounded-lg text-black font-bold flex items-center justify-center gap-2 cursor-pointer hover:bg-neutral-700 hover:text-neutral-300 transition-all duartion-300">
                     <span>Details</span>{" "}
                     <span>
