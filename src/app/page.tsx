@@ -1,3 +1,4 @@
+import Experience from "@/components/Experience/Experience";
 import GithubHeatMap from "@/components/GithubHeatmap/GithubHeatmap";
 import Hero from "@/components/Hero/Hero";
 import HeroImage from "@/components/HeroImage/HeroImage";
@@ -13,6 +14,7 @@ export default function Home() {
         <GithubHeatMap />
         <TechStack />
         <Projects />
+        <Experience />
       </div>
     </div>
   );

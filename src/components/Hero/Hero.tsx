@@ -1,6 +1,6 @@
-import { Download } from "lucide-react";
-import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { ArrowUpRight, Download } from "lucide-react";
+import HeroProfile from "../HeroProfile/HeroProfile";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -15,16 +15,29 @@ export default function Hero() {
         backend applications with Next.js and Node.js.
       </p>
       <div className="mt-2 flex items-center gap-5">
-        <button className="text-md flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 px-5 font-bold text-black transition-all duration-200 hover:bg-neutral-800 hover:text-white">
-          Resume{" "}
+        <Link
+          href="/docs/resume/resume.pdf"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="text-md flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 px-5 font-bold text-black transition-all duration-200 hover:bg-neutral-800 hover:text-white"
+        >
+          View Resume{" "}
+          <span>
+            <ArrowUpRight className="size-5" />
+          </span>
+        </Link>
+        <Link
+          download={"Mayank_Arora_Resume.pdf"}
+          href={"/docs/resume/resume.pdf"}
+          rel="noopener noreferrer"
+          className="text-md flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 px-5 font-bold text-black transition-all duration-200 hover:bg-neutral-800 hover:text-white"
+        >
+          Download Resume{" "}
           <span>
             <Download className="size-5" />
           </span>
-        </button>
-        <div className="flex items-center justify-center gap-3">
-          <FaGithub className="size-6 cursor-pointer text-neutral-400 transition-all duration-200 hover:text-neutral-200" />
-          <FaLinkedin className="size-6 cursor-pointer text-neutral-400 transition-all duration-200 hover:text-neutral-200" />
-        </div>
+        </Link>
+        <HeroProfile />
       </div>
     </div>
   );

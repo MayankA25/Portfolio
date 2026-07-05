@@ -9,11 +9,11 @@ import {
 import { GrMysql } from "react-icons/gr";
 import { RiNextjsFill } from "react-icons/ri";
 import {
-  SiCplusplus,
   SiExpress,
   SiJavascript,
   SiMongodb,
   SiPostman,
+  SiPython,
   SiRedis,
   SiRender,
   SiSocketdotio,
@@ -174,9 +174,9 @@ export const techStackIcons = [
   },
   {
     icon: (
-      <SiCplusplus className="size-9 text-blue-300 transition-all duration-200 hover:scale-110" />
+      <SiPython className="size-9 text-blue-300 transition-all duration-200 hover:scale-110" />
     ),
-    name: "C++",
+    name: "Python",
   },
   // {
   //   icon: <SiZod className="size-9 text-blue-300 hover:scale-110 transition-all duration-200" />,

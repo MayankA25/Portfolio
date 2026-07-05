@@ -25,7 +25,7 @@ export const projects = [
       "TanStack Query",
       "Axios",
     ],
-    coverImg: "/hero-image.jpg",
+    coverImg: "/images/hero-image.jpg",
   },
   {
     title: "RideMate",
@@ -51,7 +51,7 @@ export const projects = [
       "Axios",
       "Context API",
     ],
-    coverImg: "/hero-image.jpg",
+    coverImg: "/images/hero-image.jpg",
   },
   {
     title: "StudoSphere",
@@ -83,7 +83,7 @@ export const projects = [
       "Axios",
       "JWT",
     ],
-    coverImg: "/hero-image.jpg",
+    coverImg: "/images/hero-image.jpg",
   },
   {
     title: "BulkMailer",
@@ -106,6 +106,6 @@ export const projects = [
       "Axios",
       "REST API",
     ],
-    coverImg: "/hero-image.jpg",
+    coverImg: "/images/hero-image.jpg",
   },
 ];

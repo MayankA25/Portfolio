@@ -1,13 +1,16 @@
 "use client";
 import { projects } from "@/utils/projects";
-import { ArrowUpRight, Link2 } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
-import { SiGithub } from "react-icons/si";
 import Badge from "../ui/Badge";
+import { links } from "@/utils/projectLinks";
+import HoverBadge from "../ui/HoverBadge";
+import Button from "../ui/Button";
 
 export default function Projects() {
   const [coverImageHover, setCoverImageHover] = useState(-1);
+  const [hoverIndex, setHoverIndex] = useState(-1);
   return (
     <div className="flex flex-col gap-10">
       <h1 className="text-3xl font-bold text-neutral-300">Projects</h1>
@@ -40,12 +43,39 @@ export default function Projects() {
                       className={`absolute ${coverImageHover != -1 && coverImageHover == index ? "bottom-0" : "-bottom-10"} h-12 w-full rounded-t-4xl bg-black px-6 py-3 transition-all duration-300`}
                     >
                       <div className="flex items-center gap-4 text-neutral-400">
-                        {project.completed && (
+                        {/* {project.completed && (
                           <SiGithub className="size-5 transition-all duration-200 hover:text-neutral-100" />
                         )}
                         {project.completed && (
                           <Link2 className="size-5 transition-all duration-200 hover:text-neutral-100" />
-                        )}
+                        )} */}
+                        {project.completed &&
+                          links.map((link, linkIndex) => {
+                            return (
+                              <span
+                                key={linkIndex}
+                                className="relative flex justify-center"
+                              >
+                                <i
+                                  onMouseOver={() => setHoverIndex(linkIndex)}
+                                  onMouseOut={() => {
+                                    setHoverIndex(-1);
+                                  }}
+                                >
+                                  {link.icon}
+                                </i>
+                                {
+                                  <HoverBadge
+                                    condition={
+                                      coverImageHover == index &&
+                                      linkIndex == hoverIndex
+                                    }
+                                    text={link.name}
+                                  />
+                                }
+                              </span>
+                            );
+                          })}
                         {!project.completed && (
                           <span className="font-bold text-neutral-300">
                             Upcoming...
@@ -86,23 +116,29 @@ export default function Projects() {
                         return (
                           <div key={index} className="relative">
                             <Badge text={tech} />
-                            {index ==
+                            {/* {index ==
                               project.techStack.slice(0, 7).length - 1 && (
-                              <div className="absolute top-0 -right-12 flex cursor-default items-center rounded-full bg-neutral-900 p-1.5 px-2 text-sm font-bold">
-                                +{project.techStack.length - 7}
+                              <div className="absolute top-0 -right-12 flex cursor-default items-center rounded-full bg-neutral-900 p-1.5 px-2 text-md font-extrabold">
+                                + ...
                               </div>
-                            )}
+                            )} */}
                           </div>
                         );
                       })}
                     </div>
                   </div>
-                  <button className="duartion-300 flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-neutral-300 p-2 font-bold text-black transition-all hover:bg-neutral-700 hover:text-neutral-300">
+                  {/* <button className="duartion-300 flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-neutral-300 p-2 font-bold text-black transition-all hover:bg-neutral-700 hover:text-neutral-300">
                     <span>Details</span>{" "}
                     <span>
                       <ArrowUpRight className="size-5" />
                     </span>
-                  </button>
+                  </button> */}
+                  <Button>
+                    <span>Details</span>{" "}
+                    <span>
+                      <ArrowUpRight className="size-5" />
+                    </span>
+                  </Button>
                 </div>
               </div>
             </div>
