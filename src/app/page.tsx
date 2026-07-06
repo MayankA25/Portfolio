@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact/Contact";
 import Experience from "@/components/Experience/Experience";
 import GithubHeatMap from "@/components/GithubHeatmap/GithubHeatmap";
 import Hero from "@/components/Hero/Hero";
@@ -15,6 +16,7 @@ export default function Home() {
         <TechStack />
         <Projects />
         <Experience />
+        <Contact />
       </div>
     </div>
   );

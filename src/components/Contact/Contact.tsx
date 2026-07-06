@@ -1,0 +1,18 @@
+import React from "react";
+import ContactForm from "../ContactForm/ContactForm";
+
+export default function Contact() {
+  return (
+    <div className="flex flex-col gap-10">
+      <div className="flex flex-col justify-center gap-2">
+        <h1 className="text-3xl font-extrabold">Contact</h1>
+        <span className="text-lg font-semibold text-neutral-400">
+          Let&apos;s Connect and Collaborate.
+        </span>
+      </div>
+      <div className="items-centerp-4 flex">
+        <ContactForm />
+      </div>
+    </div>
+  );
+}

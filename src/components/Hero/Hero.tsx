@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div className="flex flex-col gap-3">
-      <h1 className="text-7xl font-bold">Mayank Arora</h1>
+      <h1 className="text-7xl font-extrabold">Mayank Arora</h1>
       <p className="mt-4 text-xl">
         Backend-focused full-stack developer specializing in building scalable
         APIs, real-time systems, and efficient server-side architectures using

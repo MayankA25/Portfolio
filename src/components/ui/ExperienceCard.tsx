@@ -98,7 +98,7 @@ export default function ExperienceCard({
           })}
         </div>
       </div>
-      <div className="my-4 flex gap-3">
+      <div className="mt-4 flex gap-3">
         <h1 className="text-lg font-extrabold">Projects: </h1>
         <div className="flex items-center gap-2">
           {experience.projects.map((project, index) => {
@@ -129,6 +129,11 @@ export default function ExperienceCard({
             );
           })}
         </div>
+      </div>
+      <div className="mb-4 flex items-center">
+        <h1 className="text-lg font-extrabold">
+          Role: <span className="font-semibold">{experience.role}</span>
+        </h1>
       </div>
       <div className="grid grid-cols-2 gap-3">
         <Button>
