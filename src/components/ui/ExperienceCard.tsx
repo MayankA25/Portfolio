@@ -5,6 +5,7 @@ import Badge from "./Badge";
 import HoverBadge from "./HoverBadge";
 import { ArrowUpRight } from "lucide-react";
 import Button from "./Button";
+import Link from "next/link";
 
 interface Experience {
   companyName: string;
@@ -24,6 +25,8 @@ interface Experience {
     name: string;
     link: string;
   }[];
+  certificateLink: string;
+  lorLink: string;
 }
 
 export default function ExperienceCard({
@@ -136,18 +139,22 @@ export default function ExperienceCard({
         </h1>
       </div>
       <div className="grid grid-cols-2 gap-3">
-        <Button>
-          <span>Certificate</span>
-          <i>
-            <ArrowUpRight />
-          </i>
-        </Button>
+        <Link href={experience.certificateLink} target="_blank">
+          <Button>
+            <span>Certificate</span>
+            <i>
+              <ArrowUpRight />
+            </i>
+          </Button>
+        </Link>
+        <Link href={experience.lorLink} target="_blank">
         <Button>
           <span>LOR</span>
           <i>
             <ArrowUpRight />
           </i>
         </Button>
+        </Link>
       </div>
     </div>
   );

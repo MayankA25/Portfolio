@@ -26,6 +26,8 @@ export const workExperience = [
         link: "https://github.com/MayankA25/StudoSphere",
       },
     ],
+    certificateLink: "/docs/clavis/certificate.pdf",
+    lorLink: "/docs/clavis/lor.pdf"
   },
   {
     companyName: "Aaptatt Private Limited",
@@ -58,5 +60,7 @@ export const workExperience = [
         link: "https://bharatconnect.ai/",
       },
     ],
+    certificateLink: "/docs/aaptatt/certificate.pdf",
+    lorLink: "/docs/aaptatt/lor.pdf"
   },
 ];
