@@ -5,17 +5,6 @@ import HoverBadge from "../ui/HoverBadge";
 
 export default function TechStack() {
   const [hoverIndex, setHoverIndex] = useState(-1);
-  // const techStackIcons = [
-  //     {
-  //         icon: <FaReact className='size-10 text-cyan-400 hover:scale-108 transition-all duration-200'/>,
-  //         name: "React"
-
-  //     },
-  //     {
-  //          icon: <FaNodeJs className='size-10 text-green-300 hover:scale-108 transition-all duration-200'/>,
-  //         name: "NodeJS"
-  //     }
-  // ]
   return (
     <div className="flex flex-col gap-7">
       <h1 className="text-3xl font-bold text-neutral-300">Tech Stack</h1>

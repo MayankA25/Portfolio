@@ -3,10 +3,11 @@ import { projects } from "@/utils/projects";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
-import Badge from "../ui/Badge";
 import { links } from "@/utils/projectLinks";
 import HoverBadge from "../ui/HoverBadge";
 import Button from "../ui/Button";
+import Stack from "../ui/Stack";
+import Link from "next/link";
 
 export default function Projects() {
   const [coverImageHover, setCoverImageHover] = useState(-1);
@@ -110,35 +111,37 @@ export default function Projects() {
                     </div>
                   </div>
                   <p>{project.description}</p>
-                  <div className="flex items-center">
+                  {/* <div className="flex items-center">
                     <div className="grid grid-cols-4 gap-3">
                       {project.techStack.slice(0, 7).map((tech, index) => {
                         return (
                           <div key={index} className="relative">
                             <Badge text={tech} />
-                            {/* {index ==
-                              project.techStack.slice(0, 7).length - 1 && (
-                              <div className="absolute top-0 -right-12 flex cursor-default items-center rounded-full bg-neutral-900 p-1.5 px-2 text-md font-extrabold">
-                                + ...
-                              </div>
-                            )} */}
                           </div>
                         );
                       })}
                     </div>
-                  </div>
+                  </div> */}
+                  <Stack
+                    techStack={project.techStack.slice(0, 7)}
+                    className="grid grid-cols-4 gap-3"
+                    circleClassName="p-0.75"
+                    textClassName="text-xs"
+                  />
                   {/* <button className="duartion-300 flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-neutral-300 p-2 font-bold text-black transition-all hover:bg-neutral-700 hover:text-neutral-300">
                     <span>Details</span>{" "}
                     <span>
                       <ArrowUpRight className="size-5" />
                     </span>
                   </button> */}
-                  <Button>
-                    <span>Details</span>{" "}
-                    <span>
-                      <ArrowUpRight className="size-5" />
-                    </span>
-                  </Button>
+                  <Link href={`/projects/${project.title.toLowerCase()}`}>
+                    <Button>
+                      <span>Details</span>{" "}
+                      <span>
+                        <ArrowUpRight className="size-5" />
+                      </span>
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>

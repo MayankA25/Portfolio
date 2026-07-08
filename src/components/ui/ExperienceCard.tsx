@@ -6,6 +6,7 @@ import HoverBadge from "./HoverBadge";
 import { ArrowUpRight } from "lucide-react";
 import Button from "./Button";
 import Link from "next/link";
+import HyperLinkTitle from "./HyperLinkTitle";
 
 interface Experience {
   companyName: string;
@@ -34,7 +35,7 @@ export default function ExperienceCard({
 }: {
   experience: Experience;
 }) {
-  const [hover, setHover] = useState(false);
+
   const [projectHover, setProjectHover] = useState(-1);
 
   return (
@@ -53,32 +54,15 @@ export default function ExperienceCard({
           />
         </a>
         <div className="flex flex-col justify-center gap-2">
-          <h1 className="relative flex flex-col font-extrabold">
-            <span className="flex items-center gap-2">
-              <a
-                href={experience.companyWebsite}
-                target="_blank"
-                onMouseOver={() => {
-                  setHover(true);
-                }}
-                onMouseOut={() => {
-                  setHover(false);
-                }}
-                className={`cursor-pointer text-2xl transition-all duration-200 ${hover ? "text-white underline" : ""}`}
-              >
-                {experience.companyName}{" "}
-              </a>{" "}
-              <span className="text-lg font-bold">
-                ( {experience.startDate.split(" ")[0]} -{" "}
-                {experience.endDate.split(" ")[0]} )
-              </span>
-            </span>
+          
+            <HyperLinkTitle href={experience.companyWebsite} hoverText={"Visit Website"} startMonth={experience.startDate.split(" ")[0]} endMonth={ experience.endDate.split(" ")[0] } >
+              <span>{ experience.companyName }</span>
+            </HyperLinkTitle>
             <span className="text-sm">{experience.duration}</span>
-            <HoverBadge condition={hover} text="Visit Website" />
-          </h1>
+           
           <div className="grid grid-cols-2 gap-2">
-            <Badge text={experience.location} />
-            <Badge text={experience.type} />
+            <Badge text={experience.location} circleClassName="p-0.75" textClassName="text-xs" />
+            <Badge text={experience.type} circleClassName="0.75" textClassName="text-xs"/>
           </div>
         </div>
       </div>
@@ -97,7 +81,7 @@ export default function ExperienceCard({
         </ul>
         <div className="grid grid-cols-4 gap-3">
           {experience.technologies.map((tech, index) => {
-            return <Badge key={index} text={tech} />;
+            return <Badge key={index} text={tech} circleClassName="0.75" textClassName="text-xs" />;
           })}
         </div>
       </div>
@@ -148,12 +132,12 @@ export default function ExperienceCard({
           </Button>
         </Link>
         <Link href={experience.lorLink} target="_blank">
-        <Button>
-          <span>LOR</span>
-          <i>
-            <ArrowUpRight />
-          </i>
-        </Button>
+          <Button>
+            <span>LOR</span>
+            <i>
+              <ArrowUpRight />
+            </i>
+          </Button>
         </Link>
       </div>
     </div>

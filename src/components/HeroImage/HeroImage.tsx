@@ -7,7 +7,7 @@ export default function HeroImage() {
     <div className="sticky top-0 z-[-1] h-80 w-full shadow-2xl">
       <div className="absolute h-full w-full">
         <Image
-          src={"/hero-image.jpg"}
+          src={"/images/hero-image.jpg"}
           fill
           alt=""
           className="mask-[radial-gradient(circle_at_center,black_70%,transparent_100%)] object-cover [-webkit-mask-image:radial-gradient(circle_at_center,black_70%,transparent_100%)]"

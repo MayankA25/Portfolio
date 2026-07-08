@@ -8,7 +8,7 @@ import TechStack from "@/components/TechStack/TechStack";
 
 export default function Home() {
   return (
-    <div className="relative m-auto my-8 w-[70%]">
+    <div className="">
       <HeroImage />
       <div className="w-full space-y-20 rounded-t-lg bg-neutral-950">
         <Hero />
