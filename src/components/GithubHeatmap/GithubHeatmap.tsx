@@ -7,7 +7,9 @@ export default function GithubHeatMap() {
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => setMounted(true));
-    return () => window.cancelAnimationFrame(frame);
+    return () => {
+      window.cancelAnimationFrame(frame);
+    };
   }, []);
 
   if (!mounted) return null;

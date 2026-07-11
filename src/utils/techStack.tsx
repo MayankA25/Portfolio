@@ -1,8 +1,6 @@
 import {
-  FaCss3Alt,
   FaGitAlt,
   FaGithub,
-  FaHtml5,
   FaNodeJs,
   FaReact,
 } from "react-icons/fa6";
@@ -12,6 +10,7 @@ import {
   SiExpress,
   SiJavascript,
   SiMongodb,
+  SiPostgresql,
   SiPostman,
   SiPython,
   SiRedis,
@@ -82,21 +81,21 @@ export const techStackIcons = [
 
   {
     icon: (
+      <SiPostgresql className="size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
+    ),
+    name: "PostgreSQL",
+  },
+  {
+    icon: (
       <SiTailwindcss className="size-9 text-sky-400 transition-all duration-200 hover:scale-110" />
     ),
-    name: "Tailwind CSS",
+    name: "Tailwind",
   },
   {
     icon: (
-      <FaHtml5 className="size-9 text-orange-500 transition-all duration-200 hover:scale-110" />
+      <SiPostman className="size-9 text-orange-500 transition-all duration-200 hover:scale-110" />
     ),
-    name: "HTML5",
-  },
-  {
-    icon: (
-      <FaCss3Alt className="size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
-    ),
-    name: "CSS3",
+    name: "Postman",
   },
   {
     icon: (

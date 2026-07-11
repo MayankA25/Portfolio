@@ -5,6 +5,7 @@ import Hero from "@/components/Hero/Hero";
 import HeroImage from "@/components/HeroImage/HeroImage";
 import Projects from "@/components/Projects/Projects";
 import TechStack from "@/components/TechStack/TechStack";
+import { techStackIcons } from "@/utils/techStack";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <div className="w-full space-y-20 rounded-t-lg bg-neutral-950">
         <Hero />
         <GithubHeatMap />
-        <TechStack />
+        <TechStack stack={techStackIcons} />
         <Projects />
         <Experience />
         <Contact />

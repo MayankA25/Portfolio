@@ -123,7 +123,7 @@ export default function Projects() {
                     </div>
                   </div> */}
                   <Stack
-                    techStack={project.techStack.slice(0, 7)}
+                    techStack={project.techStack.slice(0, 7).map((stack)=>stack.name as string)}
                     className="grid grid-cols-4 gap-3"
                     circleClassName="p-0.75"
                     textClassName="text-xs"

@@ -1,12 +1,13 @@
 import { ArrowUpRight, Moon } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 export default function Header() {
   return (
-    <div className="sticky top-0 z-4 flex items-center justify-between bg-black p-8 py-4">
-      <div className="flex items-center">
-        <h1 className="text-2xl font-bold">Mayank</h1>
-      </div>
+    <div className="sticky top-0 z-4 flex items-center justify-between bg-black p-8 py-4 text-neutral-400 ">
+      <Link href={"/"} className="flex items-center">
+        <h1 className="text-2xl font-bold hover:text-white transition-all duration-200">Mayank</h1>
+      </Link>
       {/* <div className="flex items-center gap-10 justify-center bg-linear-150 from-neutral-900 via-neutral-900 to-neutral-800 py-3 rounded-xl shadow-2xl">
             { tabs.map((tab, index)=>{
                 return (
@@ -21,12 +22,12 @@ export default function Header() {
         <button>
           <Moon className="cursor-pointer fill-black transition-all duration-200 hover:fill-white" />
         </button>
-        <button className="flex cursor-pointer items-center justify-center gap-2 rounded-full border p-3 px-6 font-bold transition-all duration-200 hover:bg-neutral-200 hover:text-neutral-900">
+        <a href="#contact" className="flex cursor-pointer items-center justify-center gap-2 rounded-full border p-3 px-6 font-extrabold transition-all duration-200 hover:bg-neutral-200 hover:text-neutral-900">
           <h1>Contact</h1>
           <i>
             <ArrowUpRight />
           </i>
-        </button>
+        </a>
       </div>
     </div>
   );

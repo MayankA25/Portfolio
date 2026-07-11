@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import MainComponent from "@/components/MainComponent/MainComponent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,15 +25,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+  
+
   return (
     <html
+      date-scroll-behaviour="smooth"
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         <Header />
-        <div className="h-full p-5 relative m-auto my-8 w-[70%]">{children}</div>
-        <Footer text="Mayank Arora" />
+        <MainComponent>
+          { children }
+        </MainComponent>
+        <Footer />
       </body>
     </html>
   );
