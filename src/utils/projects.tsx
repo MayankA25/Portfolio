@@ -88,109 +88,109 @@ export const projects = [
     techStack: [
       {
         icon: (
-          <RiNextjsFill className="size-9 transition-all duration-200 hover:scale-110" />
+          <RiNextjsFill className="size-7 md:size-9 transition-all duration-200 hover:scale-110" />
         ),
         name: "Next.js",
       },
       {
         icon: (
-          <FaReact className="size-9 text-cyan-400 transition-all duration-200 hover:scale-110" />
+          <FaReact className="size-7 md:size-9 text-cyan-400 transition-all duration-200 hover:scale-110" />
         ),
         name: "React",
       },
       {
         icon: (
-          <SiTypescript className="size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
+          <SiTypescript className="size-7 md:size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "TypeScript",
       },
       {
         icon: (
-          <RiTailwindCssFill className="size-9 text-sky-400 transition-all duration-200 hover:scale-110" />
+          <RiTailwindCssFill className="size-7 md:size-9 text-sky-400 transition-all duration-200 hover:scale-110" />
         ),
-        name: "Tailwind CSS",
+        name: "Tailwind",
       },
       {
         icon: (
-          <FaNodeJs className="size-9 text-green-600 transition-all duration-200 hover:scale-110" />
+          <FaNodeJs className="size-7 md:size-9 text-green-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "Node.js",
       },
       {
         icon: (
-          <SiExpress className="size-9 transition-all duration-200 hover:scale-110" />
+          <SiExpress className="size-7 md:size-9 transition-all duration-200 hover:scale-110" />
         ),
         name: "Express.js",
       },
       {
         icon: (
-          <SiMongodb className="size-9 text-green-500 transition-all duration-200 hover:scale-110" />
+          <SiMongodb className="size-7 md:size-9 text-green-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "MongoDB",
       },
       {
         icon: (
-          <SiMongoose className="size-9 text-red-600 transition-all duration-200 hover:scale-110" />
+          <SiMongoose className="size-7 md:size-9 text-red-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "Mongoose",
       },
       {
         icon: (
-          <SiJsonwebtokens className="size-9 text-pink-500 transition-all duration-200 hover:scale-110" />
+          <SiJsonwebtokens className="size-7 md:size-9 text-pink-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "JWT",
       },
       {
         icon: (
-          <FcGoogle className="size-9 transition-all duration-200 hover:scale-110" />
+          <FcGoogle className="size-7 md:size-9 transition-all duration-200 hover:scale-110" />
         ),
         name: "OAuth",
       },
       {
         icon: (
-          <SiRedis className="size-9 text-red-500 transition-all duration-200 hover:scale-110" />
+          <SiRedis className="size-7 md:size-9 text-red-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Redis",
       },
       {
         icon: (
-          <FaTasks className="size-9 text-red-600 transition-all duration-200 hover:scale-110" />
+          <FaTasks className="size-7 md:size-9 text-red-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "BullMQ",
       },
       {
         icon: (
-          <FaEnvelope className="size-9 text-green-500 transition-all duration-200 hover:scale-110" />
+          <FaEnvelope className="size-7 md:size-9 text-green-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Nodemailer",
       },
       {
         icon: (
-          <SiCloudinary className="size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
+          <SiCloudinary className="size-7 md:size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Cloudinary",
       },
       {
         icon: (
-          <FaUpload className="size-9 text-orange-500 transition-all duration-200 hover:scale-110" />
+          <FaUpload className="size-7 md:size-9 text-orange-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Multer",
       },
       {
         icon: (
-          <SiZod className="size-9 text-indigo-500 transition-all duration-200 hover:scale-110" />
+          <SiZod className="size-7 md:size-9 text-indigo-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Zod",
       },
       {
         icon: (
-          <SiReactquery className="size-9 text-red-500 transition-all duration-200 hover:scale-110" />
+          <SiReactquery className="size-7 md:size-9 text-red-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "TanStack",
       },
       {
         icon: (
-          <SiAxios className="size-9 text-purple-500 transition-all duration-200 hover:scale-110" />
+          <SiAxios className="size-7 md:size-9 text-purple-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Axios",
       },
@@ -233,7 +233,7 @@ export const projects = [
       {
         heading: "Technical Highlights",
         content: [
-          "Built with React, Tailwind CSS, and DaisyUI for the frontend.",
+          "Built with React, Tailwind, and DaisyUI for the frontend.",
           "Express.js and MongoDB power the backend services.",
           "Socket.IO enables real-time messaging and notifications.",
           "Cloudinary manages storage of verification documents.",
@@ -257,97 +257,97 @@ export const projects = [
     techStack: [
       {
         icon: (
-          <FaReact className="size-9 text-cyan-400 transition-all duration-200 hover:scale-110" />
+          <FaReact className="size-7 md:size-9 text-cyan-400 transition-all duration-200 hover:scale-110" />
         ),
         name: "React",
       },
       {
         icon: (
-          <RiTailwindCssFill className="size-9 text-sky-400 transition-all duration-200 hover:scale-110" />
+          <RiTailwindCssFill className="size-7 md:size-9 text-sky-400 transition-all duration-200 hover:scale-110" />
         ),
-        name: "Tailwind CSS",
+        name: "Tailwind",
       },
       {
         icon: (
-          <SiDaisyui className="size-9 text-fuchsia-500 transition-all duration-200 hover:scale-110" />
+          <SiDaisyui className="size-7 md:size-9 text-fuchsia-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "DaisyUI",
       },
       {
         icon: (
-          <FaNodeJs className="size-9 text-green-600 transition-all duration-200 hover:scale-110" />
+          <FaNodeJs className="size-7 md:size-9 text-green-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "Node.js",
       },
       {
         icon: (
-          <SiExpress className="size-9 transition-all duration-200 hover:scale-110" />
+          <SiExpress className="size-7 md:size-9 transition-all duration-200 hover:scale-110" />
         ),
         name: "Express.js",
       },
       {
         icon: (
-          <SiMongodb className="size-9 text-green-500 transition-all duration-200 hover:scale-110" />
+          <SiMongodb className="size-7 md:size-9 text-green-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "MongoDB",
       },
       {
         icon: (
-          <SiMongoose className="size-9 text-red-600 transition-all duration-200 hover:scale-110" />
+          <SiMongoose className="size-7 md:size-9 text-red-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "Mongoose",
       },
       {
         icon: (
-          <SiSocketdotio className="size-9 transition-all duration-200 hover:scale-110" />
+          <SiSocketdotio className="size-7 md:size-9 transition-all duration-200 hover:scale-110" />
         ),
         name: "Socket.IO",
       },
       {
         icon: (
-          <SiJsonwebtokens className="size-9 text-pink-500 transition-all duration-200 hover:scale-110" />
+          <SiJsonwebtokens className="size-7 md:size-9 text-pink-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "JWT",
       },
       {
         icon: (
-          <SiCloudinary className="size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
+          <SiCloudinary className="size-7 md:size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Cloudinary",
       },
       {
         icon: (
-          <FaUpload className="size-9 text-orange-500 transition-all duration-200 hover:scale-110" />
+          <FaUpload className="size-7 md:size-9 text-orange-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Multer",
       },
       {
         icon: (
-          <SiLeaflet className="size-9 text-green-500 transition-all duration-200 hover:scale-110" />
+          <SiLeaflet className="size-7 md:size-9 text-green-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Leaflet",
       },
       {
         icon: (
-          <FaMapMarkedAlt className="size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
+          <FaMapMarkedAlt className="size-7 md:size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "OpenStreetMap",
       },
       {
         icon: (
-          <FaEnvelope className="size-9 text-green-500 transition-all duration-200 hover:scale-110" />
+          <FaEnvelope className="size-7 md:size-9 text-green-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Nodemailer",
       },
       {
         icon: (
-          <SiAxios className="size-9 text-purple-500 transition-all duration-200 hover:scale-110" />
+          <SiAxios className="size-7 md:size-9 text-purple-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Axios",
       },
       {
         icon: (
-          <TbBrandReactNative className="size-9 text-cyan-400 transition-all duration-200 hover:scale-110" />
+          <TbBrandReactNative className="size-7 md:size-9 text-cyan-400 transition-all duration-200 hover:scale-110" />
         ),
         name: "Context API",
       },
@@ -423,133 +423,133 @@ export const projects = [
     techStack: [
       {
         icon: (
-          <FaReact className="size-9 text-cyan-400 transition-all duration-200 hover:scale-110" />
+          <FaReact className="size-7 md:size-9 text-cyan-400 transition-all duration-200 hover:scale-110" />
         ),
         name: "React",
       },
       {
         icon: (
-          <RiTailwindCssFill className="size-9 text-sky-400 transition-all duration-200 hover:scale-110" />
+          <RiTailwindCssFill className="size-7 md:size-9 text-sky-400 transition-all duration-200 hover:scale-110" />
         ),
-        name: "Tailwind CSS",
+        name: "Tailwind",
       },
       {
         icon: (
-          <SiDaisyui className="size-9 text-fuchsia-500 transition-all duration-200 hover:scale-110" />
+          <SiDaisyui className="size-7 md:size-9 text-fuchsia-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "DaisyUI",
       },
       {
         icon: (
-          <FaNodeJs className="size-9 text-green-600 transition-all duration-200 hover:scale-110" />
+          <FaNodeJs className="size-7 md:size-9 text-green-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "Node.js",
       },
       {
         icon: (
-          <SiExpress className="size-9 transition-all duration-200 hover:scale-110" />
+          <SiExpress className="size-7 md:size-9 transition-all duration-200 hover:scale-110" />
         ),
         name: "Express.js",
       },
       {
         icon: (
-          <SiMongodb className="size-9 text-green-500 transition-all duration-200 hover:scale-110" />
+          <SiMongodb className="size-7 md:size-9 text-green-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "MongoDB",
       },
       {
         icon: (
-          <SiMongoose className="size-9 text-red-600 transition-all duration-200 hover:scale-110" />
+          <SiMongoose className="size-7 md:size-9 text-red-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "Mongoose",
       },
       {
         icon: (
-          <SiSocketdotio className="size-9 transition-all duration-200 hover:scale-110" />
+          <SiSocketdotio className="size-7 md:size-9 transition-all duration-200 hover:scale-110" />
         ),
         name: "Socket.IO",
       },
       {
         icon: (
-          <SiRedis className="size-9 text-red-500 transition-all duration-200 hover:scale-110" />
+          <SiRedis className="size-7 md:size-9 text-red-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Redis",
       },
       {
         icon: (
-          <FaTasks className="size-9 text-red-600 transition-all duration-200 hover:scale-110" />
+          <FaTasks className="size-7 md:size-9 text-red-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "BullMQ",
       },
       {
         icon: (
-          <FaEnvelope className="size-9 text-green-500 transition-all duration-200 hover:scale-110" />
+          <FaEnvelope className="size-7 md:size-9 text-green-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Nodemailer",
       },
       {
         icon: (
-          <FcGoogle className="size-9 transition-all duration-200 hover:scale-110" />
+          <FcGoogle className="size-7 md:size-9 transition-all duration-200 hover:scale-110" />
         ),
         name: "OAuth",
       },
       {
         icon: (
-          <SiPassport className="size-9 text-green-600 transition-all duration-200 hover:scale-110" />
+          <SiPassport className="size-7 md:size-9 text-green-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "Passport.js",
       },
       {
         icon: (
-          <SiCloudinary className="size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
+          <SiCloudinary className="size-7 md:size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Cloudinary",
       },
       {
         icon: (
-          <FaUpload className="size-9 text-orange-500 transition-all duration-200 hover:scale-110" />
+          <FaUpload className="size-7 md:size-9 text-orange-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Multer",
       },
       {
         icon: (
-          <SiOllama className="size-9 transition-all duration-200 hover:scale-110" />
+          <SiOllama className="size-7 md:size-9 transition-all duration-200 hover:scale-110" />
         ),
         name: "Ollama",
       },
       {
         icon: (
-          <FaRobot className="size-9 text-purple-500 transition-all duration-200 hover:scale-110" />
+          <FaRobot className="size-7 md:size-9 text-purple-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "LLaMA 3.1",
       },
       {
         icon: (
-          <SiGooglecalendar className="size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
+          <SiGooglecalendar className="size-7 md:size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Google Calendar API",
       },
       {
         icon: (
-          <SiProtoncalendar className="size-9 text-indigo-500 transition-all duration-200 hover:scale-110" />
+          <SiProtoncalendar className="size-7 md:size-9 text-indigo-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "FullCalendar",
       },
       {
         icon: (
-          <SiGraphiteEditor className="size-9 text-blue-600 transition-all duration-200 hover:scale-110" />
+          <SiGraphiteEditor className="size-7 md:size-9 text-blue-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "Monaco Editor",
       },
       {
         icon: (
-          <SiAxios className="size-9 text-purple-500 transition-all duration-200 hover:scale-110" />
+          <SiAxios className="size-7 md:size-9 text-purple-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Axios",
       },
       {
         icon: (
-          <SiJsonwebtokens className="size-9 text-pink-500 transition-all duration-200 hover:scale-110" />
+          <SiJsonwebtokens className="size-7 md:size-9 text-pink-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "JWT",
       },
@@ -622,79 +622,79 @@ export const projects = [
     techStack: [
       {
         icon: (
-          <FaNodeJs className="size-9 text-green-600 transition-all duration-200 hover:scale-110" />
+          <FaNodeJs className="size-7 md:size-9 text-green-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "Node.js",
       },
       {
         icon: (
-          <SiExpress className="size-9 transition-all duration-200 hover:scale-110" />
+          <SiExpress className="size-7 md:size-9 transition-all duration-200 hover:scale-110" />
         ),
         name: "Express.js",
       },
       {
         icon: (
-          <SiMongodb className="size-9 text-green-500 transition-all duration-200 hover:scale-110" />
+          <SiMongodb className="size-7 md:size-9 text-green-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "MongoDB",
       },
       {
         icon: (
-          <SiMongoose className="size-9 text-red-600 transition-all duration-200 hover:scale-110" />
+          <SiMongoose className="size-7 md:size-9 text-red-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "Mongoose",
       },
       {
         icon: (
-          <SiRedis className="size-9 text-red-500 transition-all duration-200 hover:scale-110" />
+          <SiRedis className="size-7 md:size-9 text-red-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Redis",
       },
       {
         icon: (
-          <FaTasks className="size-9 text-red-600 transition-all duration-200 hover:scale-110" />
+          <FaTasks className="size-7 md:size-9 text-red-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "BullMQ",
       },
       {
         icon: (
-          <FaEnvelope className="size-9 text-green-500 transition-all duration-200 hover:scale-110" />
+          <FaEnvelope className="size-7 md:size-9 text-green-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Nodemailer",
       },
       {
         icon: (
-          <FcGoogle className="size-9 transition-all duration-200 hover:scale-110" />
+          <FcGoogle className="size-7 md:size-9 transition-all duration-200 hover:scale-110" />
         ),
         name: "OAuth",
       },
       {
         icon: (
-          <SiPassport className="size-9 text-green-600 transition-all duration-200 hover:scale-110" />
+          <SiPassport className="size-7 md:size-9 text-green-600 transition-all duration-200 hover:scale-110" />
         ),
         name: "Passport.js",
       },
       {
         icon: (
-          <SiJsonwebtokens className="size-9 text-pink-500 transition-all duration-200 hover:scale-110" />
+          <SiJsonwebtokens className="size-7 md:size-9 text-pink-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "JWT",
       },
       {
         icon: (
-          <FaUpload className="size-9 text-orange-500 transition-all duration-200 hover:scale-110" />
+          <FaUpload className="size-7 md:size-9 text-orange-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Multer",
       },
       {
         icon: (
-          <SiAxios className="size-9 text-purple-500 transition-all duration-200 hover:scale-110" />
+          <SiAxios className="size-7 md:size-9 text-purple-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "Axios",
       },
       {
         icon: (
-          <FaServer className="size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
+          <FaServer className="size-7 md:size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
         ),
         name: "REST API",
       },

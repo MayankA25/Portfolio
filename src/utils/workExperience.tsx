@@ -30,7 +30,7 @@ export const workExperience = [
     lorLink: "/docs/clavis/lor.pdf"
   },
   {
-    companyName: "Aaptatt Private Limited",
+    companyName: "Aaptatt Pvt. Ltd.",
     role: "Software Development Intern",
     type: "Internship",
     startDate: "June 2025",

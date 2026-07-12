@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div className="flex flex-col gap-3">
-      <h1 className="text-7xl font-extrabold">Mayank Arora</h1>
-      <p className="mt-4 text-xl">
+      <h1 className="text-5xl md:text-7xl font-extrabold">Mayank Arora</h1>
+      <p className="mt-4 md:text-xl">
         Backend-focused full-stack developer specializing in building scalable
         APIs, real-time systems, and efficient server-side architectures using
         the MERN stack. I focus on designing robust backend logic, database
@@ -14,12 +14,12 @@ export default function Hero() {
         Currently improving system design skills and building production-style
         backend applications with Next.js and Node.js.
       </p>
-      <div className="mt-2 flex items-center gap-5">
+      <div className="mt-2 flex flex-wrap items-center gap-3 md:gap-5">
         <Link
           href="/docs/resume/resume.pdf"
           rel="noopener noreferrer"
           target="_blank"
-          className="text-md flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 px-5 font-bold text-black transition-all duration-200 hover:bg-neutral-800 hover:text-white"
+          className="text-sm md:text-md flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 px-3 md:px-5 font-bold text-black transition-all duration-200 hover:bg-neutral-800 hover:text-white"
         >
           View Resume{" "}
           <span>
@@ -30,7 +30,7 @@ export default function Hero() {
           download={"Mayank_Arora_Resume.pdf"}
           href={"/docs/resume/resume.pdf"}
           rel="noopener noreferrer"
-          className="text-md flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 px-5 font-bold text-black transition-all duration-200 hover:bg-neutral-800 hover:text-white"
+          className="text-sm md:text-md flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 px-3 md:px-5 font-bold text-black transition-all duration-200 hover:bg-neutral-800 hover:text-white"
         >
           Download Resume{" "}
           <span>

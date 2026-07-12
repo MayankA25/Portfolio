@@ -22,14 +22,14 @@ export default function Projects() {
               key={index}
               className="flex items-center rounded-xl bg-neutral-900 p-5"
             >
-              <div className="flex w-full items-center gap-10">
-                <div className="relative flex h-65 w-110 items-center justify-center overflow-hidden rounded-xl">
+              <div className="flex w-full flex-col items-center gap-10 lg:flex-row">
+                <div className="relative flex h-[30vh] w-full items-center justify-center overflow-hidden rounded-xl lg:w-[50%]">
                   <Image
                     src={project.coverImg}
                     alt=""
                     fill
                     sizes="100vw"
-                    className={`object-cover transition-all duration-200 ${coverImageHover != -1 && coverImageHover == index && "scale-103"}`}
+                    className={`object-contain transition-all duration-200 ${coverImageHover != -1 && coverImageHover == index && "scale-103"}`}
                   ></Image>
                   <div
                     onMouseOver={() => {
@@ -86,31 +86,37 @@ export default function Projects() {
                     </div>
                   </div>
                 </div>
-                <div className="flex w-[50%] flex-col justify-center gap-4">
-                  <div className="flex items-center gap-7">
-                    <h1 className="text-3xl font-bold">{project.title}</h1>
-                    <div className="flex items-center gap-3">
-                      <div
-                        className={`flex items-center justify-center border ${project.completed ? "border-green-400" : "border-yellow-400"} gap-2 rounded-xl bg-green-400/5 px-4 py-1`}
-                      >
-                        <span
-                          className={`rounded-full p-1 ${project.completed ? "bg-green-400" : "bg-yellow-400"}`}
-                        ></span>
-                        <span className="text-sm font-bold text-white">
-                          {project.completed ? "Completed" : "Work In Progress"}
-                        </span>
-                      </div>
-                      {project.deployed && (
-                        <div className="flex items-center justify-center gap-2 rounded-xl border border-green-400 bg-green-400/5 px-4 py-1">
-                          <span className="rounded-full bg-green-400 p-1"></span>
-                          <span className="text-sm font-bold text-white">
-                            Deployed
+                <div className="flex flex-col justify-center gap-4 lg:w-[50%]">
+                  <div className="fle items-center gap-7">
+                    <div className="flex flex-col gap-2">
+                      <h1 className="text-2xl font-bold md:text-3xl">
+                        {project.title}
+                      </h1>
+                      <div className="flex flex-wrap items-center gap-3">
+                        <div
+                          className={`flex items-center justify-center border ${project.completed ? "border-green-400" : "border-yellow-400"} gap-2 rounded-xl bg-green-400/5 px-4 py-1`}
+                        >
+                          <span
+                            className={`rounded-full p-0.75 ${project.completed ? "bg-green-400" : "bg-yellow-400"}`}
+                          ></span>
+                          <span className="text-xs font-bold text-white">
+                            {project.completed
+                              ? "Completed"
+                              : "Work In Progress"}
                           </span>
                         </div>
-                      )}
+                        {project.deployed && (
+                          <div className="flex items-center justify-center gap-2 rounded-xl border border-green-400 bg-green-400/5 px-4 py-1">
+                            <span className="rounded-full bg-green-400 p-0.75"></span>
+                            <span className="text-xs font-bold text-white">
+                              Deployed
+                            </span>
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
-                  <p>{project.description}</p>
+                  <p className="text-sm md:text-sm font-semibold">{project.description}</p>
                   {/* <div className="flex items-center">
                     <div className="grid grid-cols-4 gap-3">
                       {project.techStack.slice(0, 7).map((tech, index) => {
@@ -123,8 +129,10 @@ export default function Projects() {
                     </div>
                   </div> */}
                   <Stack
-                    techStack={project.techStack.slice(0, 7).map((stack)=>stack.name as string)}
-                    className="grid grid-cols-4 gap-3"
+                    techStack={project.techStack
+                      .slice(0, 7)
+                      .map((stack) => stack.name as string)}
+                    className="flex flex-wrap justify-center gap-3 lg:justify-start"
                     circleClassName="p-0.75"
                     textClassName="text-xs"
                   />
@@ -136,9 +144,9 @@ export default function Projects() {
                   </button> */}
                   <Link href={`/projects/${project.title.toLowerCase()}`}>
                     <Button>
-                      <span>Details</span>{" "}
+                      <span className="text-sm">Details</span>{" "}
                       <span>
-                        <ArrowUpRight className="size-5" />
+                        <ArrowUpRight className=" size-4 md:size-5" />
                       </span>
                     </Button>
                   </Link>

@@ -11,7 +11,7 @@ export default function CarouselImage({ src }: Props) {
         src={src}
         alt=""
         fill
-        className="object-cover"
+        className="object-contain"
         sizes="50vw"
         loading="eager"
       />

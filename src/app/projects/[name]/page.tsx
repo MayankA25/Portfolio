@@ -32,8 +32,8 @@ export default async function Project({
 
   return (
     <div className="flex flex-col">
-      <div className="flex items-center gap-8">
-        <h1 className="text-7xl font-extrabold">
+      <div className="flex items-center gap-4 md:gap-8">
+        <h1 className="text-6xl lg:text-7xl font-extrabold">
           {foundProject?.title as string}
         </h1>
         <ProjectProfile projectLinks={foundProject?.links as LinkType[]} />
@@ -42,8 +42,8 @@ export default async function Project({
         {foundProject?.details.slice(0, 2).map((detail, index) => {
           return (
             <div key={index} className="flex flex-col gap-2">
-              <h1 className="text-3xl font-extrabold">{detail.heading}</h1>
-              { detail.heading.toLowerCase() == "overview" ? <p className="text-lg">{detail.content}</p> : <BulletPointsContent contents={detail.content as string[]} /> }
+              <h1 className="text-3xl md:text-3xl font-bold">{detail.heading}</h1>
+              { detail.heading.toLowerCase() == "overview" ? <p className="text-sm md:text-lg">{detail.content}</p> : <BulletPointsContent contents={detail.content as string[]} /> }
             </div>
           );
         })}
@@ -60,11 +60,11 @@ export default async function Project({
       <div className="flex items-center my-10">
         <Carousel images={["/images/hero-image-2.jpg", "/images/hero-image.jpg", "/images/hero-image-2.jpg", "/images/hero-image.jpg"]}/>
       </div>
-      <div className="my-8 grid grid-cols-2 gap-10 px-1">
+      <div className="my-8 grid grid-cols-1 md:grid-cols-2 gap-10 px-1">
         {foundProject?.details.slice(2, 4).map((detail, index) => {
           return (
             <div key={index} className="flex flex-col gap-2">
-              <h1 className="text-3xl font-extrabold">{detail.heading}</h1>
+              <h1 className="text-3xl font-bold">{detail.heading}</h1>
               <BulletPointsContent contents={detail.content as string[]} />
             </div>
           );

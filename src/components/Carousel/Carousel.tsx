@@ -22,7 +22,7 @@ export default function Carousel({ images }: CarouselProps) {
 
   return (
     <div className="relative w-full">
-      <div className="relative mx-auto w-[80%] overflow-hidden">
+      <div className="relative mx-auto md:w-[80%] overflow-hidden">
         <div
           className="flex transition-transform duration-500"
           style={{

@@ -9,7 +9,7 @@ import { techStackIcons } from "@/utils/techStack";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <HeroImage />
       <div className="w-full space-y-20 rounded-t-lg bg-neutral-950">
         <Hero />

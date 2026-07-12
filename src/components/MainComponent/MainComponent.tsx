@@ -19,6 +19,6 @@ export default function MainComponent({ children }: { children: React.ReactNode 
         fetchData();
       }, [setLoading]);
   return (
-    loading ? <Loader/> : <div className="h-full p-5 relative m-auto my-8 w-[70%]">{children}</div>
+    loading ? <Loader/> : <div className="h-full px-5 md:px-10 relative m-auto my-8 w-full lg:w-[85%] overflow-x-hidden">{children}</div>
   )
 }

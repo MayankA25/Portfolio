@@ -18,22 +18,24 @@ export default function GithubHeatMap() {
       <h1 className="text-3xl font-extrabold text-neutral-300">
         Contributions
       </h1>
-      <GitHubCalendar
-        username="MayankA25"
-        blockSize={14}
-        blockMargin={10}
-        fontSize={12}
-        theme={{
-          light: [
-            "#222222", // No contributions (lighter than pure black)
-            "#4a4a4a", // Dark gray
-            "#707070", // Medium gray
-            "#a0a0a0", // Light gray
-            "#f5f5f5", // Almost white
-          ],
-          dark: ["#222222", "#4a4a4a", "#707070", "#a0a0a0", "#f5f5f5"],
-        }}
-      ></GitHubCalendar>
+      <div className="flex items-center justify-center">
+        <GitHubCalendar
+          username="MayankA25"
+          blockSize={14}
+          blockMargin={9}
+          fontSize={12}
+          theme={{
+            light: [
+              "#222222", // No contributions (lighter than pure black)
+              "#4a4a4a", // Dark gray
+              "#707070", // Medium gray
+              "#a0a0a0", // Light gray
+              "#f5f5f5", // Almost white
+            ],
+            dark: ["#222222", "#4a4a4a", "#707070", "#a0a0a0", "#f5f5f5"],
+          }}
+        ></GitHubCalendar>
+      </div>
     </div>
   );
 }

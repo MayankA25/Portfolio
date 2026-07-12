@@ -77,9 +77,9 @@ export default function ContactForm() {
         e.preventDefault();
         validateForm();
       }}
-      className="m-auto flex w-full flex-col justify-center gap-5 rounded-xl bg-neutral-900 px-8 py-8"
+      className="m-auto flex w-full flex-col justify-center gap-5 rounded-xl bg-neutral-900 px-4 py-4 md:px-8 md:py-8"
     >
-      <div className="grid grid-cols-2 items-center gap-5">
+      <div className="grid md:grid-cols-2 items-center gap-5">
         <div className="flex flex-col justify-center gap-1.5">
           <Label
             htmlFor="first-name"
@@ -145,9 +145,9 @@ export default function ContactForm() {
         />
       </div>
       <Button>
-        <span className="text-lg font-bold">Send</span>
+        <span className="text-sm md:text-lg font-bold">Send</span>
         <i>
-          <ArrowUpRight />
+          <ArrowUpRight className="size-5 md:size-6" />
         </i>
       </Button>
     </form>

@@ -10,7 +10,7 @@ export default function Contact() {
           Let&apos;s Connect and Collaborate.
         </span>
       </div>
-      <div className="items-centerp-4 flex">
+      <div className="items-center flex">
         <ContactForm />
       </div>
     </div>

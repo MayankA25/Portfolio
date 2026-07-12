@@ -18,7 +18,7 @@ export default function HyperLinkTitle({
   const [hover, setHover] = useState(false);
   return (
     <h1 className="relative flex flex-col font-extrabold">
-      <span className="flex items-center gap-2">
+      <span className="flex flex-wrap items-center gap-2">
         <a
           href={href}
           target="_blank"
@@ -28,11 +28,11 @@ export default function HyperLinkTitle({
           onMouseOut={() => {
             setHover(false);
           }}
-          className={`cursor-pointer text-2xl transition-all duration-200 ${hover ? "text-white underline" : ""}`}
+          className={`cursor-pointer text-xl md:text-2xl transition-all duration-200 ${hover ? "text-white underline" : ""}`}
         >
           {children}{" "}
         </a>{" "}
-        {startMonth && endMonth && <span className="text-lg font-bold">
+        {startMonth && endMonth && <span className="text-md md:text-lg font-bold">
           ( {startMonth} - {endMonth} )
         </span>}
       </span>

@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="sticky top-0 z-4 flex items-center justify-between bg-black p-8 py-4 text-neutral-400 ">
+    <div className="sticky top-0 z-4 flex items-center justify-between bg-black p-8 py-5 text-neutral-400 w-full">
       <Link href={"/"} className="flex items-center">
         <h1 className="text-2xl font-bold hover:text-white transition-all duration-200">Mayank</h1>
       </Link>
@@ -18,14 +18,14 @@ export default function Header() {
             }) }
         </div> */}
       <div></div>
-      <div className="flex items-center gap-8">
+      <div className="flex items-center  gap-4 md:gap-8 ">
         <button>
           <Moon className="cursor-pointer fill-black transition-all duration-200 hover:fill-white" />
         </button>
-        <a href="#contact" className="flex cursor-pointer items-center justify-center gap-2 rounded-full border p-3 px-6 font-extrabold transition-all duration-200 hover:bg-neutral-200 hover:text-neutral-900">
+        <a href="#contact" className="hidden lg:flex cursor-pointer items-center justify-center gap-2 rounded-full border md:p-3 md:px-6 p-1.5 px-3 font-extrabold transition-all duration-200 hover:bg-neutral-200 hover:text-neutral-900">
           <h1>Contact</h1>
           <i>
-            <ArrowUpRight />
+            <ArrowUpRight className="size-5 md:size-6" />
           </i>
         </a>
       </div>

@@ -8,7 +8,7 @@ export default function Experience() {
       <h1 className="text-3xl font-extrabold text-neutral-300">
         Work Experience
       </h1>
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid lg:grid-cols-2 gap-10">
         {workExperience.map((experience, index) => {
           return (
             <ExperienceCard

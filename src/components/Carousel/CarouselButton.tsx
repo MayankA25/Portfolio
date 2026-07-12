@@ -14,8 +14,8 @@ export default function CarouselButton({
       onClick={onClick}
       className={`absolute top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white ${direction == "left" ? "hover:bg-linear-90 hover:from-neutral-800 hover:to-transparent" : "hover:bg-linear-90 hover:from-transparent"} to-neutral-800 transition-all duration-300 cursor-pointer ${
         direction === "left"
-          ? "left-4"
-          : "right-4"
+          ? "-left-6 md:left-4"
+          : "-right-6 md:right-4"
       }`}
     >
       {direction === "left" ? <ChevronLeft/> : <ChevronRight/>}

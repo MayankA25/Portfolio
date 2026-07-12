@@ -40,7 +40,7 @@ export default function ExperienceCard({
 
   return (
     <div className="flex flex-col gap-3 rounded-lg bg-neutral-900 p-4 text-neutral-300">
-      <div className="flex items-center gap-4">
+      <div className="flex flex-wrap items-center gap-4">
         <a
           href={experience.companyWebsite}
           target="_blank"
@@ -60,17 +60,17 @@ export default function ExperienceCard({
             </HyperLinkTitle>
             <span className="text-sm">{experience.duration}</span>
            
-          <div className="grid grid-cols-2 gap-2">
+          <div className="flex flex-wrap gap-2">
             <Badge text={experience.location} circleClassName="p-0.75" textClassName="text-xs" />
             <Badge text={experience.type} circleClassName="0.75" textClassName="text-xs"/>
           </div>
         </div>
       </div>
       <div className="flex flex-col">
-        <span className="font-extrabold text-white">
+        <span className="font-extrabold text-sm md:text-md text-white">
           {experience.description}
         </span>
-        <ul className="my-3 list-disc px-4">
+        <ul className="my-3 list-disc px-4 text-sm md:text-md">
           {experience.responsibilities.map((responsibility, index) => {
             return (
               <li key={index} className="my-1 font-semibold">
@@ -79,14 +79,14 @@ export default function ExperienceCard({
             );
           })}
         </ul>
-        <div className="grid grid-cols-4 gap-3">
+        <div className="flex flex-wrap gap-3 justify-center">
           {experience.technologies.map((tech, index) => {
             return <Badge key={index} text={tech} circleClassName="0.75" textClassName="text-xs" />;
           })}
         </div>
       </div>
       <div className="mt-4 flex gap-3">
-        <h1 className="text-lg font-extrabold">Projects: </h1>
+        <h1 className="text-sm md:text-lg font-extrabold">Projects: </h1>
         <div className="flex items-center gap-2">
           {experience.projects.map((project, index) => {
             return (
@@ -94,10 +94,10 @@ export default function ExperienceCard({
                 href={project.link}
                 target="_blank"
                 key={index}
-                className="relative py-1"
+                className="relative md:py-1"
               >
                 <span
-                  className={`text-md cursor-pointer font-bold ${projectHover == index && "text-white underline"}`}
+                  className={`text-sm md:text-md cursor-pointer font-bold ${projectHover == index && "text-white underline"}`}
                   onMouseOver={() => {
                     setProjectHover(index);
                   }}
@@ -118,24 +118,24 @@ export default function ExperienceCard({
         </div>
       </div>
       <div className="mb-4 flex items-center">
-        <h1 className="text-lg font-extrabold">
+        <h1 className="text-sm md:text-lg font-extrabold">
           Role: <span className="font-semibold">{experience.role}</span>
         </h1>
       </div>
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid md:grid-cols-2 gap-3">
         <Link href={experience.certificateLink} target="_blank">
           <Button>
-            <span>Certificate</span>
+            <span className="text-sm md:text-md">Certificate</span>
             <i>
-              <ArrowUpRight />
+              <ArrowUpRight className="size-5 md:size-6" />
             </i>
           </Button>
         </Link>
         <Link href={experience.lorLink} target="_blank">
           <Button>
-            <span>LOR</span>
+            <span className="text-sm md:text-md">LOR</span>
             <i>
-              <ArrowUpRight />
+              <ArrowUpRight className="size-5 md:size-6" />
             </i>
           </Button>
         </Link>

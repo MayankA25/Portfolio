@@ -22,7 +22,7 @@ export default function Footer() {
     if (foundProject || pathName == "/") {
       return (
         <div className="my-40 flex items-center justify-center">
-          <h1 className={`${myFont.className} text-8xl text-neutral-800`}>
+          <h1 className={`${myFont.className} text-3xl md:text-6xl lg:text-8xl text-neutral-800`}>
             {foundProject ? foundProject.title : "Mayank Arora"}
           </h1>
         </div>
