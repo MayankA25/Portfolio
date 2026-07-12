@@ -43,7 +43,7 @@ export default async function Project({
           return (
             <div key={index} className="flex flex-col gap-2">
               <h1 className="text-3xl md:text-3xl font-bold">{detail.heading}</h1>
-              { detail.heading.toLowerCase() == "overview" ? <p className="text-sm md:text-lg">{detail.content}</p> : <BulletPointsContent contents={detail.content as string[]} /> }
+              { detail.heading.toLowerCase() == "overview" ? <p className="text-sm md:text-lg font-bold">{detail.content}</p> : <BulletPointsContent contents={detail.content as string[]} columnWise={true} /> }
             </div>
           );
         })}

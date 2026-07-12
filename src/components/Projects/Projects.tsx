@@ -28,8 +28,9 @@ export default function Projects() {
                     src={project.coverImg}
                     alt=""
                     fill
-                    sizes="100vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className={`object-contain transition-all duration-200 ${coverImageHover != -1 && coverImageHover == index && "scale-103"}`}
+                    loading="eager"
                   ></Image>
                   <div
                     onMouseOver={() => {

@@ -50,6 +50,7 @@ export default function ExperienceCard({
             src={experience.companyLogo}
             alt=""
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-contain p-2"
           />
         </a>

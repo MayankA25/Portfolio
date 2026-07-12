@@ -1,3 +1,4 @@
+'use client';
 import { ArrowUpRight, Moon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -22,12 +23,12 @@ export default function Header() {
         <button>
           <Moon className="cursor-pointer fill-black transition-all duration-200 hover:fill-white" />
         </button>
-        <a href="#contact" className="hidden lg:flex cursor-pointer items-center justify-center gap-2 rounded-full border md:p-3 md:px-6 p-1.5 px-3 font-extrabold transition-all duration-200 hover:bg-neutral-200 hover:text-neutral-900">
+        <div onClick={()=>{document.getElementById("contact")?.scrollIntoView()}} className="hidden lg:flex cursor-pointer items-center justify-center gap-2 rounded-full border md:p-3 md:px-6 p-1.5 px-3 font-extrabold transition-all duration-200 hover:bg-neutral-200 hover:text-neutral-900">
           <h1>Contact</h1>
           <i>
             <ArrowUpRight className="size-5 md:size-6" />
           </i>
-        </a>
+        </div>
       </div>
     </div>
   );
