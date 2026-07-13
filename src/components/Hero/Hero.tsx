@@ -19,7 +19,7 @@ export default function Hero() {
           href="/docs/resume/resume.pdf"
           rel="noopener noreferrer"
           target="_blank"
-          className="text-sm md:text-md flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 px-3 md:px-5 font-bold text-black transition-all duration-200 hover:bg-neutral-800 hover:text-white"
+          className="text-sm md:text-md flex cursor-pointer items-center gap-2 rounded-full bg-neutral-950 dark:bg-white p-2 px-3 md:px-5 font-bold text-white dark:text-black transition-all duration-200 hover:bg-neutral-200 dark:hover:bg-neutral-800 hover:text-neutral-950 dark:hover:text-white"
         >
           View Resume{" "}
           <span>
@@ -30,7 +30,7 @@ export default function Hero() {
           download={"Mayank_Arora_Resume.pdf"}
           href={"/docs/resume/resume.pdf"}
           rel="noopener noreferrer"
-          className="text-sm md:text-md flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 px-3 md:px-5 font-bold text-black transition-all duration-200 hover:bg-neutral-800 hover:text-white"
+          className="text-sm md:text-md flex cursor-pointer items-center gap-2 rounded-full bg-neutral-950 dark:bg-white p-2 px-3 md:px-5 font-bold text-white dark:text-black transition-all duration-200 hover:bg-neutral-200 dark:hover:bg-neutral-800 hover:text-neutral-950 dark:hover:text-white"
         >
           Download Resume{" "}
           <span>

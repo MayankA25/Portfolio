@@ -9,9 +9,9 @@ import { techStackIcons } from "@/utils/techStack";
 
 export default function Home() {
   return (
-    <div>
+    <div className="relative">
       <HeroImage />
-      <div className="w-full space-y-20 rounded-t-lg bg-neutral-950 text-neutral-300">
+      <div className="absolutew-full space-y-20 rounded-t-lg bg-neutral-50 dark:bg-neutral-950 dark:text-neutral-300 transition-colors duration-300">
         <Hero />
         <GithubHeatMap />
         <TechStack stack={techStackIcons} />

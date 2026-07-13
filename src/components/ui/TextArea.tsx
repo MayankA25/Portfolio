@@ -22,7 +22,7 @@ export default function TextArea({
       value={value}
       onChange={onChange}
       rows={8}
-      className={`resize-none rounded-xl bg-neutral-800 px-3 py-3 font-semibold outline-0 focus:bg-neutral-950 ${isError && "border border-red-400 placeholder:text-red-400"}`}
+      className={`resize-none rounded-xl bg-neutral-200 dark:bg-neutral-800 px-3 py-3 font-semibold outline-0 focus:bg-neutral-300 dark:focus:bg-neutral-950 ${isError && "border border-red-400 placeholder:text-red-400"}`}
     ></textarea>
   );
 }

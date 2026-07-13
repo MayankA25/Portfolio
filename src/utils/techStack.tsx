@@ -35,7 +35,6 @@ export const techStackIcons = [
     ),
     name: "JavaScript",
   },
-
   {
     icon: (
       <FaReact className="size-7 md:size-9 text-cyan-400 transition-all duration-200 hover:scale-110" />
@@ -44,7 +43,7 @@ export const techStackIcons = [
   },
   {
     icon: (
-      <RiNextjsFill className="size-7 md:size-9 text-white transition-all duration-200 hover:scale-110" />
+      <RiNextjsFill className="size-7 md:size-9 text-neutral-900 dark:text-neutral-50 transition-all duration-200 hover:scale-110" />
     ),
     name: "Next.js",
   },
@@ -56,32 +55,31 @@ export const techStackIcons = [
   },
   {
     icon: (
-      <SiExpress className="size-7 md:size-9 text-gray-300 transition-all duration-200 hover:scale-110" />
+      <SiExpress className="size-7 md:size-9 text-neutral-700 dark:text-neutral-300 transition-all duration-200 hover:scale-110" />
     ),
     name: "Express.js",
   },
   {
     icon: (
-      <SiTanstack className="size-7 md:size-9 text-yellow-400 transition-all duration-200 hover:scale-110" />
+      <SiTanstack className="size-7 md:size-9 text-yellow-500 dark:text-yellow-400 transition-all duration-200 hover:scale-110" />
     ),
     name: "TanStack",
   },
   {
     icon: (
-      <SiMongodb className="size-7 md:size-9 text-green-600 transition-all duration-200 hover:scale-110" />
+      <SiMongodb className="size-7 md:size-9 text-green-700 dark:text-green-500 transition-all duration-200 hover:scale-110" />
     ),
     name: "MongoDB",
   },
   {
     icon: (
-      <GrMysql className="size-7 md:size-9 text-blue-300 transition-all duration-200 hover:scale-110" />
+      <GrMysql className="size-7 md:size-9 text-sky-700 dark:text-sky-300 transition-all duration-200 hover:scale-110" />
     ),
     name: "MySQL",
   },
-
   {
     icon: (
-      <SiPostgresql className="size-7 md:size-9 text-blue-500 transition-all duration-200 hover:scale-110" />
+      <SiPostgresql className="size-7 md:size-9 text-blue-700 dark:text-blue-400 transition-all duration-200 hover:scale-110" />
     ),
     name: "PostgreSQL",
   },
@@ -105,7 +103,7 @@ export const techStackIcons = [
   },
   {
     icon: (
-      <FaGithub className="size-7 md:size-9 text-white transition-all duration-200 hover:scale-110" />
+      <FaGithub className="size-7 md:size-9 text-neutral-900 dark:text-neutral-50 transition-all duration-200 hover:scale-110" />
     ),
     name: "GitHub",
   },
@@ -115,71 +113,28 @@ export const techStackIcons = [
     ),
     name: "Redis",
   },
-  // {
-  //   icon: <SiBullmq className="size-7 md:size-9 text-red-400 hover:scale-110 transition-all duration-200" />,
-  //   name: "BullMQ",
-  // },
-  // {
-  //   icon: <SiCloudinary className="size-7 md:size-9 text-blue-400 hover:scale-110 transition-all duration-200" />,
-  //   name: "Cloudinary",
-  // },
-  // {
-  //   icon: <SiPassport className="size-7 md:size-9 text-green-400 hover:scale-110 transition-all duration-200" />,
-  //   name: "Passport.js",
-  // },
-  // {
-  //   icon: <SiGoogle className="size-7 md:size-9 text-red-400 hover:scale-110 transition-all duration-200" />,
-  //   name: "Google OAuth",
-  // },
-  // {
-  //   icon: <SiNodemailer className="size-7 md:size-9 text-yellow-300 hover:scale-110 transition-all duration-200" />,
-  //   name: "Nodemailer",
-  // },
   {
     icon: (
-      <SiSocketdotio className="size-7 md:size-9 text-white transition-all duration-200 hover:scale-110" />
+      <SiSocketdotio className="size-7 md:size-9 text-neutral-900 dark:text-neutral-50 transition-all duration-200 hover:scale-110" />
     ),
     name: "Socket.IO",
   },
-  // {
-  //   icon: <SiOpenstreetmap className="size-7 md:size-9 text-green-500 hover:scale-110 transition-all duration-200" />,
-  //   name: "OpenStreetMap",
-  // },
-  // {
-  //   icon: <SiLeaflet className="size-7 md:size-9 text-green-400 hover:scale-110 transition-all duration-200" />,
-  //   name: "Leaflet",
-  // },
-  // {
-  //   icon: <FaAws className="size-7 md:size-9 text-orange-400 hover:scale-110 transition-all duration-200" />,
-  //   name: "AWS",
-  // },
-  // {
-  //   icon: (
-  //     <SiPostman className="size-7 md:size-9 text-orange-500 transition-all duration-200 hover:scale-110" />
-  //   ),
-  //   name: "Postman",
-  // },
   {
     icon: (
-      <SiVercel className="size-7 md:size-9 text-white transition-all duration-200 hover:scale-110" />
+      <SiVercel className="size-7 md:size-9 text-neutral-900 dark:text-neutral-50 transition-all duration-200 hover:scale-110" />
     ),
     name: "Vercel",
   },
   {
     icon: (
-      <SiRender className="size-7 md:size-9 text-purple-400 transition-all duration-200 hover:scale-110" />
+      <SiRender className="size-7 md:size-9 text-purple-500 dark:text-purple-400 transition-all duration-200 hover:scale-110" />
     ),
     name: "Render",
   },
   {
     icon: (
-      <SiPython className="size-7 md:size-9 text-blue-300 transition-all duration-200 hover:scale-110" />
+      <SiPython className="size-7 md:size-9 text-blue-500 dark:text-yellow-300 transition-all duration-200 hover:scale-110" />
     ),
     name: "Python",
   },
-  // {
-  //   icon: <SiZod className="size-7 md:size-9 text-blue-300 hover:scale-110 transition-all duration-200" />,
-
-  //   name: "Zod",
-  // },
 ];

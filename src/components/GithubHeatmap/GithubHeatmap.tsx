@@ -1,9 +1,11 @@
 "use client";
+import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
 import { GitHubCalendar } from "react-github-calendar";
 
 export default function GithubHeatMap() {
   const [mounted, setMounted] = useState(false);
+  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => setMounted(true));
@@ -13,6 +15,24 @@ export default function GithubHeatMap() {
   }, []);
 
   if (!mounted) return null;
+
+  const lightTheme = [
+    "#ebedf0",
+    "#9be9a8",
+    "#40c463",
+    "#30a14e",
+    "#216e39",
+  ];
+
+  // const darkTheme = [
+  //   "#161b22",
+  //   "#0e4429",
+  //   "#006d32",
+  //   "#26a641",
+  //   "#39d353",
+  // ];
+
+
   return (
     <div className="flex flex-col justify-center gap-5">
       <h1 className="text-3xl font-extrabold">
@@ -25,15 +45,16 @@ export default function GithubHeatMap() {
           blockMargin={9}
           fontSize={12}
           theme={{
-            light: [
-              "#222222", // No contributions (lighter than pure black)
-              "#4a4a4a", // Dark gray
-              "#707070", // Medium gray
-              "#a0a0a0", // Light gray
-              "#f5f5f5", // Almost white
-            ],
+           light: [
+  "#dddddd",
+  "#999999",
+  "#666666",
+  "#444444",
+  "#1a1a1a",
+],
             dark: ["#222222", "#4a4a4a", "#707070", "#a0a0a0", "#f5f5f5"],
           }}
+          colorScheme={ resolvedTheme == "dark" ? "dark" : "light" }
         ></GitHubCalendar>
       </div>
     </div>

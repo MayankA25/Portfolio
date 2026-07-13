@@ -24,7 +24,7 @@ export default function Input({
       value={value}
       placeholder={isError ? error?.join(" , ") : placeholder}
       onChange={onChange}
-      className={`rounded-lg bg-neutral-800 px-3 py-3 font-semibold outline-0 transition-all duration-200 focus:bg-neutral-950 ${isError && "border border-red-400 placeholder:text-red-400"}`}
+      className={`rounded-lg bg-neutral-200 dark:bg-neutral-800 px-3 py-3 font-semibold outline-0 transition-all duration-200 focus:bg-neutral-300 dark:focus:bg-neutral-950 ${isError && "border border-red-400 placeholder:text-red-400"}`}
     />
   );
 }

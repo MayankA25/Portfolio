@@ -28,7 +28,7 @@ export default function HyperLinkTitle({
           onMouseOut={() => {
             setHover(false);
           }}
-          className={`cursor-pointer text-xl md:text-2xl transition-all duration-200 ${hover ? "text-white underline" : ""}`}
+          className={`cursor-pointer text-xl md:text-2xl transition-all duration-200 ${hover ? "dark:text-white underline" : ""}`}
         >
           {children}{" "}
         </a>{" "}

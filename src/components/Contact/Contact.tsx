@@ -6,7 +6,7 @@ export default function Contact() {
     <div id="contact" className="flex flex-col gap-10">
       <div className="flex flex-col justify-center gap-2">
         <h1 className="text-3xl font-extrabold">Contact</h1>
-        <span className="text-lg font-semibold text-neutral-400">
+        <span className="text-lg font-semibold text-neutral-600 dark:text-neutral-400">
           Let&apos;s Connect and Collaborate.
         </span>
       </div>

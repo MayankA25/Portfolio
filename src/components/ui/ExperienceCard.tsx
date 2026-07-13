@@ -39,7 +39,7 @@ export default function ExperienceCard({
   const [projectHover, setProjectHover] = useState(-1);
 
   return (
-    <div className="flex flex-col gap-3 rounded-lg bg-neutral-900 p-4">
+    <div className="flex flex-col gap-3 rounded-lg bg-neutral-100 dark:bg-neutral-900 p-4">
       <div className="flex flex-wrap items-center gap-4">
         <a
           href={experience.companyWebsite}
@@ -68,7 +68,7 @@ export default function ExperienceCard({
         </div>
       </div>
       <div className="flex flex-col">
-        <span className="font-extrabold text-sm md:text-md text-white">
+        <span className="font-extrabold text-sm md:text-md">
           {experience.description}
         </span>
         <ul className="my-3 list-disc px-4 text-sm md:text-md">
@@ -98,7 +98,7 @@ export default function ExperienceCard({
                 className="relative md:py-1"
               >
                 <span
-                  className={`text-sm md:text-md cursor-pointer font-bold ${projectHover == index && "text-white underline"}`}
+                  className={`text-sm md:text-md cursor-pointer font-bold ${projectHover == index && "dark:text-white underline"}`}
                   onMouseOver={() => {
                     setProjectHover(index);
                   }}

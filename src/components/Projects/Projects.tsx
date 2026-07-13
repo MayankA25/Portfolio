@@ -20,7 +20,7 @@ export default function Projects() {
           return (
             <div
               key={index}
-              className="flex items-center rounded-xl bg-neutral-900 p-5"
+              className="flex items-center rounded-xl bg-neutral-100 dark:bg-neutral-900 p-5"
             >
               <div className="flex w-full flex-col items-center gap-10 lg:flex-row">
                 <div className="relative flex h-[30vh] w-full items-center justify-center overflow-hidden rounded-xl lg:w-[50%]">
@@ -39,12 +39,12 @@ export default function Projects() {
                     onMouseOut={() => {
                       setCoverImageHover(-1);
                     }}
-                    className={`absolute top-0 h-full w-full ${coverImageHover != -1 && coverImageHover == index ? "bg-radial from-transparent to-black backdrop-blur-xs" : "bg-linear-to-r from-black/20 to-black/20"} flex cursor-pointer items-center justify-center transition-all duration-300 ${!project.completed && "backdrop-grayscale-100"}`}
+                    className={`absolute top-0 h-full w-full ${coverImageHover != -1 && coverImageHover == index ? "bg-radial from-transparent to-black/50 dark:to-black backdrop-blur-xs" : "bg-linear-to-r from-black/5 to-black/5  dark:from-black/20 darkto-black/20"} flex cursor-pointer items-center justify-center transition-all duration-300 ${!project.completed && "backdrop-grayscale-100"}`}
                   >
                     <div
-                      className={`absolute ${coverImageHover != -1 && coverImageHover == index ? "bottom-0" : "-bottom-10"} h-12 w-full rounded-t-4xl bg-black px-6 py-3 transition-all duration-300`}
+                      className={`absolute ${coverImageHover != -1 && coverImageHover == index ? "bottom-0" : "-bottom-10"} h-12 w-full rounded-t-4xl bg-neutral-200 dark:bg-black px-6 py-3 transition-all duration-300`}
                     >
-                      <div className="flex items-center gap-4 text-neutral-400">
+                      <div className="flex items-center gap-4 dark:text-neutral-400 text-neutral-600">
                         {/* {project.completed && (
                           <SiGithub className="size-5 transition-all duration-200 hover:text-neutral-100" />
                         )}
@@ -59,6 +59,7 @@ export default function Projects() {
                                 className="relative flex justify-center"
                               >
                                 <i
+                                  
                                   onMouseOver={() => setHoverIndex(linkIndex)}
                                   onMouseOut={() => {
                                     setHoverIndex(-1);
@@ -95,21 +96,21 @@ export default function Projects() {
                       </h1>
                       <div className="flex flex-wrap items-center gap-3">
                         <div
-                          className={`flex items-center justify-center border ${project.completed ? "border-green-400" : "border-yellow-400"} gap-2 rounded-xl bg-green-400/5 px-4 py-1`}
+                          className={`flex items-center justify-center border ${project.completed ? "border-green-600 dark:border-green-400" : "border-yellow-500 dark:border-yellow-400"} gap-2 rounded-xl bg-green-400/5 px-4 py-1`}
                         >
                           <span
-                            className={`rounded-full p-0.75 ${project.completed ? "bg-green-400" : "bg-yellow-400"}`}
+                            className={`rounded-full p-0.75 ${project.completed ? "bg-green-600 dark:bg-green-400" : "bg-yellow-500 dark:bg-yellow-400"}`}
                           ></span>
-                          <span className="text-xs font-bold text-white">
+                          <span className="text-xs font-bold dark:text-white">
                             {project.completed
                               ? "Completed"
                               : "Work In Progress"}
                           </span>
                         </div>
                         {project.deployed && (
-                          <div className="flex items-center justify-center gap-2 rounded-xl border border-green-400 bg-green-400/5 px-4 py-1">
-                            <span className="rounded-full bg-green-400 p-0.75"></span>
-                            <span className="text-xs font-bold text-white">
+                          <div className="flex items-center justify-center gap-2 rounded-xl border border-green-600 dark:border-green-400 bg-green-400/5 px-4 py-1">
+                            <span className="rounded-full bg-green-600 dark:bg-green-400 p-0.75"></span>
+                            <span className="text-xs font-bold dark:text-white">
                               Deployed
                             </span>
                           </div>

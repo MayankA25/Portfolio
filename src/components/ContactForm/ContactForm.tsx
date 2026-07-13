@@ -77,7 +77,7 @@ export default function ContactForm() {
         e.preventDefault();
         validateForm();
       }}
-      className="m-auto flex w-full flex-col justify-center gap-5 rounded-xl bg-neutral-900 px-4 py-4 md:px-8 md:py-8"
+      className="m-auto flex w-full flex-col justify-center gap-5 rounded-xl bg-neutral-100 dark:bg-neutral-900 px-4 py-4 md:px-8 md:py-8"
     >
       <div className="grid md:grid-cols-2 items-center gap-5">
         <div className="flex flex-col justify-center gap-1.5">
