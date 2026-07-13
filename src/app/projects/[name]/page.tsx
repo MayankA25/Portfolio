@@ -42,7 +42,7 @@ export default async function Project({
         {foundProject?.details.slice(0, 2).map((detail, index) => {
           return (
             <div key={index} className="flex flex-col gap-2">
-              <h1 className="text-2xl md:text-3xl font-bold">{detail.heading}</h1>
+              <h1 className="text-2xl md:text-3xl font-extrabold">{detail.heading}</h1>
               { detail.heading.toLowerCase() == "overview" ? <p className="text-sm md:text-lg font-bold">{detail.content}</p> : <BulletPointsContent contents={detail.content as string[]} columnWise={true} /> }
             </div>
           );
@@ -64,7 +64,7 @@ export default async function Project({
         {foundProject?.details.slice(2, 4).map((detail, index) => {
           return (
             <div key={index} className="flex flex-col gap-2">
-              <h1 className="text-2xl lg:text-3xl font-bold">{detail.heading}</h1>
+              <h1 className="text-2xl lg:text-3xl font-extrabold">{detail.heading}</h1>
               <BulletPointsContent contents={detail.content as string[]} />
             </div>
           );

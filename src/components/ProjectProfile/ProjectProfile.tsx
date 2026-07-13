@@ -14,7 +14,7 @@ export default function ProjectProfile({ projectLinks }: { projectLinks: LinkTyp
     <div className="flex items-center justify-center gap-4">
       {projectLinks.map((projectLink, index) => {
         return (
-          <a href={projectLink.link} target="_blank" key={index} className="relative flex justify-center text-neutral-400 hover:text-white transition-all duration-200">
+          <a href={projectLink.link} target="_blank" key={index} className="relative flex justify-center  hover:text-white transition-all duration-200">
             <i
               onMouseOver={() => setHoverIndex(index)}
               onMouseOut={() => {

@@ -14,7 +14,7 @@ export default function Projects() {
   const [hoverIndex, setHoverIndex] = useState(-1);
   return (
     <div className="flex flex-col gap-10">
-      <h1 className="text-3xl font-extrabold text-neutral-300">Projects</h1>
+      <h1 className="text-3xl font-extrabold">Projects</h1>
       <div className="flex flex-col justify-center gap-4">
         {projects.map((project, index) => {
           return (
@@ -79,7 +79,7 @@ export default function Projects() {
                             );
                           })}
                         {!project.completed && (
-                          <span className="font-bold text-neutral-300">
+                          <span className="font-bold">
                             Upcoming...
                           </span>
                         )}

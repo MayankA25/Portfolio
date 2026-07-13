@@ -12,7 +12,7 @@ export default function TechStack({ stack }: { stack: stackType[] }) {
   const [hoverIndex, setHoverIndex] = useState(-1);
   return (
     <div className="flex flex-col gap-7">
-      <h1 className="text-3xl font-bold text-neutral-300">Tech Stack</h1>
+      <h1 className="text-3xl font-extrabold">Tech Stack</h1>
       <div className="flex flex-wrap gap-25 justify-center gap-y-8 px-2">
         {stack.map((techStackIcon, index) => {
           return (

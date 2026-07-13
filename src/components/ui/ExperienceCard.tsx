@@ -39,7 +39,7 @@ export default function ExperienceCard({
   const [projectHover, setProjectHover] = useState(-1);
 
   return (
-    <div className="flex flex-col gap-3 rounded-lg bg-neutral-900 p-4 text-neutral-300">
+    <div className="flex flex-col gap-3 rounded-lg bg-neutral-900 p-4">
       <div className="flex flex-wrap items-center gap-4">
         <a
           href={experience.companyWebsite}

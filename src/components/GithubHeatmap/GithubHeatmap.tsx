@@ -15,7 +15,7 @@ export default function GithubHeatMap() {
   if (!mounted) return null;
   return (
     <div className="flex flex-col justify-center gap-5">
-      <h1 className="text-3xl font-extrabold text-neutral-300">
+      <h1 className="text-3xl font-extrabold">
         Contributions
       </h1>
       <div className="flex items-center justify-center">
