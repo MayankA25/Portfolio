@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import MainComponent from "@/components/MainComponent/MainComponent";
+import Providers from "./providers/ThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,23 +26,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-
-  
-
   return (
     <html
       date-scroll-behaviour="smooth"
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col">
-        <div id="top" className=""></div>
-        <Header />
-        <MainComponent>
-          { children }
-        </MainComponent>
-        <Footer />
+        <Providers>
+          <div id="top" className=""></div>
+          <Header />
+          <MainComponent>{children}</MainComponent>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
