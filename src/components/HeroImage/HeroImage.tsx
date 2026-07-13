@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HeroImage() {
   return (
-    <div className="sticky top-0 z-[-1] h-85 w-full md:h-[28rem] lg:h-[30rem]">
+    <div className="sticky top-0 z-[-1] h-85 w-full md:h-112 lg:h-120">
       <div className="absolute inset-0">
         <Image
           src="/images/hero-image.jpg"
@@ -16,7 +16,7 @@ export default function HeroImage() {
         />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-neutral-50 transition-colors duration-300 dark:to-neutral-950" />
+      <div className="absolute inset-0 bg-linear-to-b from-transparent to-neutral-50 transition-colors duration-300 dark:to-neutral-950" />
     </div>
   );
 }
