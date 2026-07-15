@@ -195,7 +195,7 @@ export const projects = [
         name: "Axios",
       },
     ],
-    coverImg: "/images/Project_Images/ManageIt/1.png",
+    coverImg: "/images/Project_Images/recruitit/1.png",
     links: [
       {
         name: "GitHub",
@@ -352,7 +352,7 @@ export const projects = [
         name: "Context API",
       },
     ],
-    coverImg: "/images/Project_Images/RideMate/1.png",
+    coverImg: "/images/Project_Images/ridemate/1.png",
     links: [
       {
         name: "GitHub",
@@ -554,7 +554,7 @@ export const projects = [
         name: "JWT",
       },
     ],
-    coverImg: "/images/Project_Images/StudoSphere/1.png",
+    coverImg: "/images/Project_Images/studosphere/1.png",
     links: [
       {
         name: "GitHub",
@@ -699,7 +699,7 @@ export const projects = [
         name: "REST API",
       },
     ],
-    coverImg: "/images/Project_Images/BulkMailer/1.png",
+    coverImg: "/images/Project_Images/bulkmailer/1.png",
     links: [
       {
         name: "GitHub",

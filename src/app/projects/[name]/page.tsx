@@ -53,9 +53,9 @@ export default async function Project({
   console.log("Images: ", images);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col py-4">
       <div className="flex items-center gap-4 md:gap-8">
-        <h1 className="text-5xl font-extrabold lg:text-7xl">
+        <h1 className="text-4xl sm:text-5xl font-extrabold lg:text-7xl">
           {foundProject?.title as string}
         </h1>
         <ProjectProfile projectLinks={foundProject?.links as LinkType[]} />

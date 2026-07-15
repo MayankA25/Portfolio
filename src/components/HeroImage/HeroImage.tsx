@@ -7,7 +7,7 @@ export default function HeroImage() {
     <div className="sticky top-0 z-[-1] h-85 w-full md:h-112 lg:h-120">
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-image.jpg"
+          src="/images/hero-image.png"
           fill
           alt="Hero"
           priority

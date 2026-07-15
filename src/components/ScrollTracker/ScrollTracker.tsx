@@ -26,10 +26,10 @@ export default function ScrollTracker() {
   }, [setScrolledHeight]);
 
   return (
-    <div className={`${scrolledHeight <= 0 && "hidden"} fixed right-10 bottom-10 z-20 flex items-center justify-center overflow-hidden rounded-full bg-neutral-50 dark:bg-neutral-950 p-3 cursor-pointer`} onClick={()=>{
+    <div className={`${scrolledHeight <= 0 && "hidden"} fixed right-10 bottom-10 z-20 flex items-center justify-center overflow-hidden rounded-full bg-neutral-50 dark:bg-neutral-950 lg:p-3 md:p-2 p-1 cursor-pointer`} onClick={()=>{
         document.getElementById("top")?.scrollIntoView();
     }}>
-      <ArrowUp className="z-40 dark:text-neutral-950 text-neutral-50" strokeWidth={3} />
+      <ArrowUp className="z-40 dark:text-neutral-950 text-neutral-50 size-5 md:size-7" strokeWidth={3} />
       <div
         className={`absolute bottom-0 flex h-full w-full items-center bg-neutral-900 dark:bg-neutral-300 transition-all duration-200`}
         style={{ transform: `scaleY(${scrolledHeight / 100})` }}

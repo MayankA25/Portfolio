@@ -8,6 +8,8 @@ import { ArrowUpRight } from "lucide-react";
 
 import * as z from "zod";
 import { contactSchema } from "@/schema/contactSchema";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 interface ContactDetails {
   firstName: string;
@@ -71,15 +73,61 @@ export default function ContactForm() {
     setContactDetais(newDetails);
   };
 
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const validation = validateForm();
+
+    if (!validation) return;
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          name: `${contactDetails.firstName} ${contactDetails.lastName}`,
+          email: `${contactDetails.email}`,
+          subject: `Contact Form Submitted By ${contactDetails.email}`,
+          message: contactDetails.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      );
+      // alert("Message Sent!");
+      toast.success("Message Sent!", {
+        className:
+          "!bg-neutral-100 dark:!bg-neutral-800 dark:!text-white !font-bold !shadow-xl",
+      });
+
+      setContactDetais({
+        firstName: "",
+        lastName: "",
+        email: "",
+        message: "",
+      });
+
+      setErrors({
+        firstName: [],
+        lastName: [],
+        email: [],
+        message: [],
+      });
+    } catch (err) {
+      console.log(err);
+      // alert("Failed to submit message.");
+      toast.error("Error While Sending Message!", {
+        className:
+          "!bg-neutral-100 dark:!bg-neutral-800 dark:!text-white !font-bold !shadow-xl",
+      });
+    }
+  };
+
   return (
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        validateForm();
+        handleSubmit(e);
       }}
-      className="m-auto flex w-full flex-col justify-center gap-5 rounded-xl bg-neutral-100 dark:bg-neutral-900 px-4 py-4 md:px-8 md:py-8"
+      className="m-auto flex w-full flex-col justify-center gap-5 rounded-xl bg-neutral-100 px-4 py-4 md:px-8 md:py-8 dark:bg-neutral-900"
     >
-      <div className="grid md:grid-cols-2 items-center gap-5">
+      <div className="grid items-center gap-5 md:grid-cols-2">
         <div className="flex flex-col justify-center gap-1.5">
           <Label
             htmlFor="first-name"
@@ -145,7 +193,7 @@ export default function ContactForm() {
         />
       </div>
       <Button>
-        <span className="text-sm md:text-lg font-bold">Send</span>
+        <span className="text-sm font-bold md:text-lg">Send</span>
         <i>
           <ArrowUpRight className="size-5 md:size-6" />
         </i>

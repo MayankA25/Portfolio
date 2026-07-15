@@ -15,7 +15,7 @@ export default function CarouselDots({
         <button
           key={index}
           onClick={() => onSelect(index)}
-          className={` ${ current == index ? "w-6 h-1.25" : "w-1.5 h-1.25" }  rounded-full transition-all duration-300 ${
+          className={` ${ current == index ? "w-6 h-1.25" : "w-1.5 h-1.25 cursor-pointer hover:w-3" }  rounded-full transition-all duration-300  ${
             current === index
               ? "bg-white scale-125"
               : "bg-white/40"
