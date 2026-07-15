@@ -9,7 +9,7 @@ export default function HeroProfile() {
     <div className="flex items-center justify-center gap-3">
       {profiles.map((profile, index) => {
         return (
-          <span key={index} className="relative flex justify-center">
+          <a href={profile.link} target="_blank" key={index} className="relative flex justify-center">
             <i
               onMouseOver={() => setHoverIndex(index)}
               onMouseOut={() => {
@@ -24,7 +24,7 @@ export default function HeroProfile() {
                 text={profile.name}
               />
             }
-          </span>
+          </a>
         );
       })}
     </div>

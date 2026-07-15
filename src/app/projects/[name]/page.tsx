@@ -24,16 +24,38 @@ export default async function Project({
     return project.title.toLowerCase() == name.toLowerCase();
   });
 
-  if(!foundProject) return notFound();
+  if (!foundProject) return notFound();
 
   console.log("Found Project: ", foundProject);
 
   console.log("Name: ", name);
 
+  const imagesLength = {
+    recruitit: 3,
+    ridemate: 20,
+    studosphere: 25,
+    bulkmailer: 3,
+  };
+
+  // type ProjectName = keyof typeof imagesLength;
+
+  // interface Props {
+  //   name: ProjectName;
+  // }
+
+  const images = Array.from(
+    { length: imagesLength[name.toLowerCase() as keyof typeof imagesLength] },
+    (_, index) =>{ 
+      console.log("Name: ", name.toLowerCase());
+      return `/images/Project_Images/${name.toLowerCase()}/${index + 1}.png`},
+  );
+
+  console.log("Images: ", images);
+
   return (
     <div className="flex flex-col">
       <div className="flex items-center gap-4 md:gap-8">
-        <h1 className="text-5xl lg:text-7xl font-extrabold">
+        <h1 className="text-5xl font-extrabold lg:text-7xl">
           {foundProject?.title as string}
         </h1>
         <ProjectProfile projectLinks={foundProject?.links as LinkType[]} />
@@ -42,8 +64,17 @@ export default async function Project({
         {foundProject?.details.slice(0, 2).map((detail, index) => {
           return (
             <div key={index} className="flex flex-col gap-2">
-              <h1 className="text-2xl md:text-3xl font-extrabold">{detail.heading}</h1>
-              { detail.heading.toLowerCase() == "overview" ? <p className="text-sm md:text-lg font-bold">{detail.content}</p> : <BulletPointsContent contents={detail.content as string[]} columnWise={true} /> }
+              <h1 className="text-2xl font-extrabold md:text-3xl">
+                {detail.heading}
+              </h1>
+              {detail.heading.toLowerCase() == "overview" ? (
+                <p className="text-sm font-bold md:text-lg">{detail.content}</p>
+              ) : (
+                <BulletPointsContent
+                  contents={detail.content as string[]}
+                  columnWise={true}
+                />
+              )}
             </div>
           );
         })}
@@ -57,14 +88,16 @@ export default async function Project({
         />
       </div> */}
       <TechStack stack={foundProject.techStack} />
-      <div className="flex items-center my-10">
-        <Carousel images={["/images/hero-image-2.jpg", "/images/hero-image.jpg", "/images/hero-image-2.jpg", "/images/hero-image.jpg"]}/>
+      <div className="my-10 flex items-center">
+        <Carousel images={images} />
       </div>
-      <div className="my-8 grid grid-cols-1 lg:grid-cols-2 gap-10 px-1">
+      <div className="my-8 grid grid-cols-1 gap-10 px-1 lg:grid-cols-2">
         {foundProject?.details.slice(2, 4).map((detail, index) => {
           return (
             <div key={index} className="flex flex-col gap-2">
-              <h1 className="text-2xl lg:text-3xl font-extrabold">{detail.heading}</h1>
+              <h1 className="text-2xl font-extrabold lg:text-3xl">
+                {detail.heading}
+              </h1>
               <BulletPointsContent contents={detail.content as string[]} />
             </div>
           );

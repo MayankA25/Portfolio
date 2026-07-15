@@ -6,7 +6,7 @@ interface Props {
 
 export default function CarouselImage({ src }: Props) {
   return (
-    <div className="relative aspect-video overflow-hidden rounded-xl">
+    <div className="relative aspect-video overflow-hidden rounded-lg">
       <Image
         src={src}
         alt=""
@@ -14,6 +14,7 @@ export default function CarouselImage({ src }: Props) {
         className="object-contain"
         sizes="50vw"
         loading="eager"
+        unoptimized
       />
     </div>
   );

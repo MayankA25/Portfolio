@@ -3,7 +3,6 @@ import { projects } from "@/utils/projects";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
-import { links } from "@/utils/projectLinks";
 import HoverBadge from "../ui/HoverBadge";
 import Button from "../ui/Button";
 import Stack from "../ui/Stack";
@@ -52,9 +51,10 @@ export default function Projects() {
                           <Link2 className="size-5 transition-all duration-200 hover:text-neutral-100" />
                         )} */}
                         {project.completed &&
-                          links.map((link, linkIndex) => {
+                          project.links.map((link, linkIndex) => {
                             return (
-                              <span
+                              <a href={link.link}
+                              target="_blank"
                                 key={linkIndex}
                                 className="relative flex justify-center"
                               >
@@ -76,7 +76,7 @@ export default function Projects() {
                                     text={link.name}
                                   />
                                 }
-                              </span>
+                              </a>
                             );
                           })}
                         {!project.completed && (

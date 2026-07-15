@@ -195,7 +195,7 @@ export const projects = [
         name: "Axios",
       },
     ],
-    coverImg: "/images/hero-image.jpg",
+    coverImg: "/images/Project_Images/ManageIt/1.png",
     links: [
       {
         name: "GitHub",
@@ -352,7 +352,7 @@ export const projects = [
         name: "Context API",
       },
     ],
-    coverImg: "/images/hero-image.jpg",
+    coverImg: "/images/Project_Images/RideMate/1.png",
     links: [
       {
         name: "GitHub",
@@ -554,7 +554,7 @@ export const projects = [
         name: "JWT",
       },
     ],
-    coverImg: "/images/hero-image.jpg",
+    coverImg: "/images/Project_Images/StudoSphere/1.png",
     links: [
       {
         name: "GitHub",
@@ -564,7 +564,7 @@ export const projects = [
       {
         name: "Live",
         icon: <Link2 className="size-6" />,
-        link: "https://studosphere-1.onrender.com/",
+        link: "https://studosphere-2.onrender.com/",
       },
     ],
   },
@@ -699,12 +699,17 @@ export const projects = [
         name: "REST API",
       },
     ],
-    coverImg: "/images/hero-image.jpg",
+    coverImg: "/images/Project_Images/BulkMailer/1.png",
     links: [
       {
         name: "GitHub",
         icon: <FaGithub className="size-6" />,
         link: "https://github.com/MayankA25/Bulk-Mailer",
+      },
+      {
+        name: "Live",
+        icon: <Link2 className="size-6" />,
+        link: "https://bulk-mailer-0vsb.onrender.com/",
       },
     ],
   },
