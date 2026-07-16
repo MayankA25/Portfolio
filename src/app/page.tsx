@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="relative">
       <HeroImage />
-      <div className="absolutew-full space-y-20 rounded-t-lg bg-neutral-50 dark:bg-neutral-950 dark:text-neutral-300 transition-colors duration-300">
+      <div className="w-full space-y-20 rounded-t-lg bg-neutral-50 dark:bg-neutral-950 dark:text-neutral-300 transition-colors duration-300">
         <Hero />
         <GithubHeatMap />
         <TechStack stack={techStackIcons} />
