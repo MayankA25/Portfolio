@@ -1,0 +1,59 @@
+enum Location {
+    onsite
+    remote
+    hybrid
+}
+
+enum ExperienceType {
+    internship
+    full_time
+    freelance
+    contract
+}
+
+model Experience {
+    id String @id @default(cuid())
+
+    companyName      String
+    role             String
+    type             ExperienceType
+    startDate        String
+    endDate          String
+    durationInMonths String
+    current          Boolean
+    location         Location
+
+    description String
+
+    responsibilities       String[]
+    experienceTechnologies ExperienceTechnology[]
+    companyLogo            String
+    companyWebsite         String
+    experienceProject      ExperienceProjects[]
+    certificateLink        String?
+    lorLink                String?
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
+
+model ExperienceTechnology {
+    experienceId String
+    technologyId String
+
+    experience Experience @relation(fields: [experienceId], references: [id])
+
+    technology Technologies @relation(fields: [technologyId], references: [id])
+
+    @@id([experienceId, technologyId])
+}
+
+model ExperienceProjects {
+    id   String @id @default(cuid())
+    name String
+    link String
+
+    experienceId String
+    experience   Experience @relation(fields: [experienceId], references: [id])
+
+}

@@ -1,0 +1,39 @@
+model Project {
+    id                String             @id @default(cuid())
+    title             String
+    completed         Boolean
+    description       String[]
+    details           ProjectDetails[]
+    coverImg          String
+    projectTechStacks ProjectTechStack[]
+    links             Links[]
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
+
+model ProjectTechStack {
+    projectId    String
+    technologyId String
+
+    project    Project      @relation(fields: [projectId], references: [id], onDelete: Cascade)
+    technology Technologies @relation(fields: [technologyId], references: [id], onDelete: Cascade)
+
+    @@id([projectId, technologyId])
+}
+
+model ProjectDetails {
+    id        String   @id @default(cuid())
+    heading   String
+    content   String[]
+    project   Project  @relation(fields: [projectId], references: [id])
+    projectId String
+}
+
+model Links {
+    id        String  @id @default(cuid())
+    name      String
+    link      String
+    projectId String
+    project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+}

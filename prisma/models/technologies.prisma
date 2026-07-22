@@ -1,0 +1,12 @@
+model Technologies {
+    id   String @id @default(cuid())
+    name String
+    slug String
+
+    introStack  Boolean                @default(false)
+    projects    ProjectTechStack[]
+    experiences ExperienceTechnology[]
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
